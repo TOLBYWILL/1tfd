@@ -1,0 +1,239 @@
+.popup {
+    z-index: 2000000;
+    position: fixed;
+    inset: 0;
+    background: #0007;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: popup-in .1s;
+}
+.popup.opaque {
+    background: #000e;
+}
+.popup.closing {
+    opacity: 0;
+    animation: popup-out .2s;
+    pointer-events: none;
+}
+
+.popup > div {
+    padding: 10px;
+    max-height: calc(100% - 20px);
+}
+
+.popup:not(.clear) > div {
+    background: var(--background-1);
+    border: 1px solid var(--border-0);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: var(--shadow-3);
+    min-width: 320px;
+    max-width: 480px;
+    overflow-y: auto;
+    animation: draw-in .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.popup.theatre > div {
+    max-width: 640px;
+}
+.popup:not(.clear) > .no-scroll {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+.popup.closing:not(.clear) > div {
+    animation: popup-body-out .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.popup:not(.clear) > div p {
+    margin-block: 10px 0;
+}
+.popup:not(.clear) > div .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.popup:not(.clear) > div .header {
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    background: linear-gradient(20deg, var(--background-2), transparent);
+}
+.popup:not(.clear) > div .quote {
+    color: var(--color-1);
+    text-align: end;
+    font-style: italic;
+}
+.popup:not(.clear) > div .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    align-items: last baseline;
+    justify-content: end;
+    margin-top: 10px;
+    gap: 5px;
+}
+.popup:not(.clear) > div .formula > h4 {
+    font: inherit;
+    color: var(--color-1);
+    text-align: center;
+    border-bottom: 1px solid var(--border-0);
+    padding-block: 0 2px;
+}
+.popup:not(.clear) > div .formula:not(:first-child) {
+    margin-top: 10px;
+}
+.popup:not(.clear) > div .formula > div {
+    display: flex;
+    border-bottom: 1px dashed var(--border-0);
+    padding-block: 3px 2px;
+    gap: 1em;
+}
+.popup:not(.clear) > div .formula > div > span {
+    display: block;
+    flex: 1;
+    white-space: nowrap;
+}
+.popup:not(.clear) > div .formula > div > :last-child {
+    text-align: end;
+}
+.popup:not(.clear) > div .formula + .actions {
+    margin-top: 5px;
+}
+.popup:not(.clear) > div .action-group {
+    display: flex;
+    gap: 5px;
+}
+
+
+
+.popup.draw-popup .big-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50vh) perspective(100vh) rotateY(180deg);
+    width: min(calc(100vw - 50px), 240px);
+    aspect-ratio: 2 / 3;
+    box-sizing: content-box;
+
+    background: var(--pack-bg);
+    color: var(--pack-color);
+    border-image: var(--pack-border) 30 / 20px 1px;
+    box-shadow: var(--shadow-0);
+    padding: 30px 10px;
+}
+.popup.draw-popup .big-card[style*="--timer"] {
+    transform: translate(-50%, -50%) scale(calc(1 + var(--timer) * 0.2)) translate(var(--shake)) rotate(var(--rotate));
+    transition: transform calc(calc(1 - var(--timer)) * calc(1 - var(--timer)) * 0.3s);
+}
+.popup.draw-popup .big-card.broken {
+    transform: translate(-50%, -50%) scale(3);
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    pointer-events: none;
+}
+.popup.draw-popup .big-card .in-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.popup.draw-popup .big-card .out-flex {
+    display: flex;
+}
+
+.popup.draw-popup .card-list {
+    max-height: calc(100vh + 20px);
+    overflow: hidden;
+    margin-block: -10px;
+    padding-block: 100px calc(max(var(--padding, 50px), 50px) + 50px);
+    pointer-events: none;
+}
+.popup.draw-popup .card-list.done {
+    overflow-y: auto;
+    pointer-events: unset;
+}
+
+.popup.draw-popup .draw-result {
+    display: none;
+    text-align: center;
+}
+
+.popup.draw-popup .card-list.done + .draw-result {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: max(calc(50% - var(--height) / 2), 0px);
+    width: 100%;
+    padding: 20px;
+    display: block;
+    animation: float-in .5s;
+    z-index: 3;
+}
+.popup.draw-popup .draw-result-currencies {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    text-align: start;
+}
+.popup.draw-popup .draw-result-currencies > * {
+    width: 160px;
+}
+
+.popup-card-actions {
+    margin-top: 10px;
+}
+
+@keyframes popup-in {
+    from {
+        background: #0000;
+    } to {
+        background: #0007;
+    }
+}
+@keyframes popup-out {
+    from {
+        background: #0007;
+        opacity: 1;
+    } 50% {
+        background: #0000;
+    } to {
+        opacity: 0;
+    }
+}
+@keyframes popup-body-out {
+    from {
+        transform: none;
+    } to {
+        transform: scale(0.9) translate3d(0, 0, -150px) perspective(100vh) rotateX(5deg);
+    }
+}
+
+.show-image {
+    width: 602px;
+    margin: 8px;
+    max-width: calc(100% - 16px);
+    border: 1px solid var(--border-1);
+    aspect-ratio: 600 / 200;
+    position: relative;
+    background: var(--background-0);
+}
+.show-image > * {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.show-text {
+    min-height: 100px;
+    margin-top: 20px;
+    text-align: center;
+}
