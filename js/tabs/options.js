@@ -145,7 +145,7 @@ tabs.options = {
                 btn.onclick = () => {
                     let i18n = str.popups.save;
                     if (game.time.now - lastCloudSaveTime < 30000) {
-                        callPopup("prompt", str.popup.common.title_error(), i18n.error_cloudSaveCooldown());
+                        callPopup("prompt", str.popups.common.title_error(), i18n.error_cloudSaveCooldown());
                     } else {
                         awardBadge(24);
                         saveGame();
@@ -166,8 +166,9 @@ tabs.options = {
                 holder.append(btn);
                 btn = $make("button", i18n.values.items.checkSaves());
                 btn.onclick = () => {
+                    let i18n = str.popups.save;
                     if (game.time.now - lastCloudCheckTime < 30000) {
-                        callPopup("prompt", "Error", "Please wait 30 seconds between cloud save checks.");
+                        callPopup("prompt", str.popups.common.title_error(), i18n.error_cloudCheckCooldown());
                     } else {
                         checkCloudSave(true);
                     }
@@ -236,7 +237,7 @@ tabs.options = {
             this.elms.cloudSave.style.display = cloud.state.loggedOut ? "none" : "";
             this.elms.cloudSaveTimer.innerHTML = `${i18n.strings["cloud_type_" + cloud.type]()}<span class="save-timer-br"></span>` + (
                 cloud.state.loggedOut ? i18n.strings.cloud_loggedOut() :
-                cloudStatus ? i18n.strings["cloud_status_" + toLowerCase()] :
+                cloudStatus ? i18n.strings["cloud_status_" + cloudStatus.toLowerCase()] :
                 cloudSaveTime < 1 ? i18n.strings.save_recent() : i18n.strings.save_timer(_number(format.time(cloudSaveTime)))
             )
         }
