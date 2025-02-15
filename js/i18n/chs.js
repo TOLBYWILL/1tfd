@@ -188,7 +188,7 @@ i18nStrings.chs = {
             }
         },
         options: {
-            name: "Options",
+            name: "选项",
             headers: {
                 prefs: "首选项",
                 saves: "存档管理",
@@ -289,7 +289,7 @@ i18nStrings.chs = {
             strings: {
                 copies: "({0} 额外副本)",
                 stars: "({0} 星)",
-                crown: "(皇冠卡)",
+                crown: "(王冠卡)",
                 level: "(等级 {0})",
                 notOwned: "(尚未拥有卡片)",
 
@@ -426,39 +426,39 @@ i18nStrings.chs = {
         cards: {
             name: "卡片",
             left: "剩余卡片",
-            quote: "Produced for the almighty Omega Cards game, these cards are actually vouchers for you to spend more money to {draw} more cards... after you use up all your one trillion free card {draws}, at least. They are too happy about giving people trillions of free card {draws}, in fact, everyone are",
+            quote: "为全能欧米茄卡游戏制作，这些卡实际上是代金券，让你花更多的钱去 {draw} 更多卡片... 在你用完你的一万亿免费卡片 {draws} 之后, 至少。他们太乐意给人们发放数万亿的免费卡片 {draws}, 事实上，每个人都是",
         },
         energy: {
-            name: "Bulk Energy",
-            quote: "Used as Omega Cards' loyalty program currency to allow you to trade in multiple card {draws} at once",
+            name: "能量体积",
+            quote: "用作欧米伽卡牌的忠诚计划货币，允许你一次性交易多张卡片 {draws}",
         },
         points: {
             name: "点数",
-            quote: "The world's most generic currency. It is generic enough to be assigned any use case imaginable",
+            quote: "世界上最通用的货币。它足够通用，可以分配给任何可以想象的用例",
         },
         shreds: {
             name: "碎片",
-            quote: "Remains of excess cards, reduced to atoms. These cards almost have no trade value (except for the few <rarity rarity='ex'></rarity> cards), so people are inventing new ways to use them, such as shredding them to use as a new upgrade currency",
+            quote: "多余卡片的残留物，被分解成原子。这些卡片几乎没有交易价值 (除了少数 <rarity rarity='ex'></rarity> 卡片), 因此，人们发明了使用它们的新方法，例如将它们粉碎，用作新的升级货币",
         },
         fire: {
             name: "火之力",
-            quote: "Power from the fire faction. Some consider discovering this humans' greatest achievement",
+            quote: "来自火派系的力量。有人认为这是人类最伟大的成就",
         },
         water: {
             name: "水之力",
-            quote: "Power from the water faction. Always reminds you to keep yourself hydrated",
+            quote: "来自水派系的力量。总是提醒你要多喝水",
         },
         leaf: {
             name: "叶之力",
-            quote: "Power from the leaf faction. You feel yourself to be one with nature",
+            quote: "来自叶派系的力量。你觉得自己与自然融为一体",
         },
         sun: {
             name: "日之力",
-            quote: "Power from the sun faction. Also believed to also have the power to control air",
+            quote: "来自日派系的力量。也被认为有控制空气的能力",
         },
         moon: {
             name: "月之力",
-            quote: "Power from the moon faction. Also believed to also have the power to control earth",
+            quote: "来自月派系的力量。也被认为有控制大地的力量",
         },
     },
 
@@ -480,45 +480,45 @@ i18nStrings.chs = {
                 },
                 n2: {
                     name: "半点",
-                    desc: "Randomly gain zero to {+0} points per {draw}.",
-                    quote: "To explain what half a point even is, we'll need to talk about parallel universes-"
+                    desc: "随机获得 0 到 {+0} 点数每次 {draw}.",
+                    quote: "为了解释半点到底是什么，我们需要谈谈平行宇宙-"
                 },
                 n3: {
                     name: "卡包",
-                    desc: "{+0} base bulk. Base bulk increase the amount of {draws} you make at once.",
-                    quote: "Well, if you want to use up all of those one trillion card {draws} you'll need to start {drawing} multiple of them at once, you know?"
+                    desc: "{+0} 基础体积. 基础体积增加你一次性 {draws} 卡片的数量",
+                    quote: "好吧，如果你想用完所有的一万亿卡片 {draws} 你需要开始一次性 {drawing} 很多张卡片，你知道吗?"
                 },
                 n4: {
                     name: "自动填充卡包",
-                    desc: "{+0} bulk power. Bulk power passively generates bulk energy.",
-                    quote: "Incremental games, also known as idle games"
+                    desc: "{+0} 大功率. 大功率力量被动地产生大功率能量.",
+                    quote: "增量游戏，又称放置游戏"
                 },
                 n5: {
                     name: "更大的卡包",
-                    desc: "{+0} bulk energy cap. Bulk energy production past the energy cap are slowed down.",
+                    desc: "{+0} 能量体积上限. 超过能量上限的大功率能量生产速度会减慢.",
                     quote: "这次你真的可以闲下来了"
                 },
                 n6: {
                     name: "剪刀",
-                    desc: "{+0%} pack breaking speed.",
-                    quote: "If you haven't noticed it yet, you can click the pack while it's breaking to break it faster"
+                    desc: "{+0%} 拆卡包速度.",
+                    quote: "如果你还没有注意到它，你可以在它破裂的时候点击它，以便更快地破坏它"
                 },
                 n7: {
                     name: "快速交付",
-                    desc: "{+0%} cooldown speed.",
-                    quote: "Restock faster with our new fast delivery service — applied to all orders 1 card and above!",
+                    desc: "{+0%} 冷却速度.",
+                    quote: "用我们新的快速送货服务更快地补充库存 - 适用于所有1卡及以上的订单!",
                 },
                 c1: {
                     name: "游戏内商店",
                     desc: "解锁市场.",
-                    quote: "Find cards that can't be found from {drawing}, and probably spend all of your money trying to out-bid the highest bidder"
+                    quote: "找到无法通过 {drawing} 获得的卡片, 可能会花光你所有的钱，试图出价超过出价最高的人"
                 }
             },
             r: {
                 n0: {
                     name: "史诗碎纸机",
-                    desc: "{+0%} shred multiplier.",
-                    quote: "Instead of using a small office-made shredder, why not use the giant ones made for ASMR videos on the internet?"
+                    desc: "{+0%} 分解乘数.",
+                    quote: "与其使用办公室制造的小型碎纸机，为什么不使用互联网上为ASMR视频制作的巨型碎纸机呢?"
                 },
                 n0b: {
                     name: "神奇的分解时刻",
@@ -527,63 +527,63 @@ i18nStrings.chs = {
                 },
                 n1: {
                     name: "点数乘数",
-                    desc: "{+0%} point multiplier.",
-                    quote: "Every incremental game needs exponential growth, a generic currency needs a generic multiplier upgrade"
+                    desc: "{+0%} 点数乘数.",
+                    quote: "每一款增量游戏都需要指数级增长，一种通用货币需要一种通用的乘数升级"
                 },
                 n1b: {
                     name: "金钱印刷机",
-                    desc: "{+0%} point multiplier.",
-                    quote: "Press some of your shreds into money. This is precisely how legal money is made too, people won't even be able to notice a difference"
+                    desc: "{+0%} 点数乘数.",
+                    quote: "把你的一些碎片压成钞票。这也是合法货币的制造方式，人们甚至不会注意到区别"
                 },
                 n2: {
                     name: "更大的卡包",
-                    desc: "{+0%} base bulk, but {+1%} cooldown duration.",
-                    quote: "The bulkier, the better"
+                    desc: "{+0%} 基础体积, 但是 {+1%} 冷却时长.",
+                    quote: "体积越大越好"
                 },
                 n3: {
                     name: "开卡器工厂",
-                    desc: "{+0%} bulk power, but {+1%} cooldown duration.",
-                    quote: "Produces large quantity of card openers"
+                    desc: "{+0%} 大功率, 但是 {+1%} 冷却时长.",
+                    quote: "生产大量的开卡器"
                 },
                 n3b: {
                     name: "回收",
-                    desc: "{+0%} bulk power.",
-                    quote: "Reusing cards to open more cards is a good idea actually"
+                    desc: "{+0%} 大功率",
+                    quote: "重复使用卡片来打开更多的卡片实际上是一个好主意"
                 },
                 n3c: {
                     name: "堆肥机",
-                    desc: "{+0%} bulk energy cap.",
-                    quote: "Recycle even harder with this composter designed to make a metric-scrap-ton of cards"
+                    desc: "{+0%} 能量体积上限.",
+                    quote: "使用这个设计用来制作一吨卡片的堆肥机，回收更加困难"
                 },
                 n4: {
                     name: "耐力训练",
-                    desc: "{+0%} card multiplier, but {+1%} cooldown duration and pack breaking duration.",
-                    quote: "The card packs got some endurance training! Now they are harder to break into, but the contents are increased!"
+                    desc: "{+0%} 卡片乘数, 但是 {+1%} 冷却时间和拆卡包时间.",
+                    quote: "卡包得到了一些耐力训练！现在更难进入了，但是里面的东西增加了！"
                 },
                 n5a: {
                     name: "趋势",
-                    desc: "{+0} fire power per gain.",
-                    quote: "ah,<br>that's hot,<br>..., that's hot"
+                    desc: "{+0} 每次获得的火之力.",
+                    quote: "啊,<br>好热啊,<br>..., 好热啊"
                 },
                 n5b: {
                     name: "海洋",
-                    desc: "{+0} water power per gain.",
-                    quote: "i'm blue da be dee da be die"
+                    desc: "{+0} 每次获得的水之力.",
+                    quote: "我是蓝色的，直到死去"
                 },
                 n5c: {
                     name: "森林",
-                    desc: "{+0} leaf power per gain.",
-                    quote: "team trees ftw"
+                    desc: "{+0} 每次获得的叶之力.",
+                    quote: "团队树 ftw"
                 },
                 n5d: {
                     name: "空气",
-                    desc: "{+0} sun power per gain.",
-                    quote: "feel the breath"
+                    desc: "{+0} 每次获得的日之力.",
+                    quote: "感受呼吸"
                 },
                 n5e: {
                     name: "大地",
-                    desc: "{+0} moon power per gain.",
-                    quote: "it is our home"
+                    desc: "{+0} 每次获得的月之力.",
+                    quote: "它是我们的家园"
                 },
                 c1: {
                     name: "系统 2",
@@ -671,53 +671,53 @@ i18nStrings.chs = {
             ssr: {
                 n0: {
                     name: "最后冲刺",
-                    desc: "{+0%} card multiplier.",
-                    quote: "Thank you for going this far into the game! If you like it be sure to leave a like and subscribe for more content like this"
+                    desc: "{+0%} 卡片乘数.",
+                    quote: "感谢你在游戏中走到这一步！如果你喜欢它，一定要留下喜欢并订阅更多类似的内容"
                 },
                 n0b: {
                     name: "废料",
-                    desc: "{x0} Shred gain from <rarity rarity='r'></rarity> and above cards.",
-                    quote: "quack"
+                    desc: "{x0} 分解增益来自 <rarity rarity='r'></rarity> 及以上卡片.",
+                    quote: "呱呱"
                 },
                 n0c: {
                     name: "黄铁矿",
-                    desc: "{x0} Shred gain from <rarity rarity='sr'></rarity> and above cards.",
-                    quote: "Despite it's being \"fool's gold\", it can still be used as an ingredient for the <rarity rarity='sr'></rarity> cards"
+                    desc: "{x0} 增益来自 <rarity rarity='sr'></rarity> 及以上卡片.",
+                    quote: "尽管它是“愚人的黄金”，但它仍然可以作为一种成分对于 <rarity rarity='sr'></rarity> 卡片"
                 },
                 n0d: {
                     name: "钻石",
-                    desc: "{x0} Shred gain from <rarity rarity='ssr'></rarity> and above cards.",
-                    quote: "Diamonds are actually quite common since there are already discoveries on how to fuse them from coal, but the equipments are so expensive that they might be considered rich people's toys"
+                    desc: "{x0} 增益来自 <rarity rarity='ssr'></rarity> 及以上卡片.",
+                    quote: "钻石实际上很常见，因为已经发现了如何从煤中聚变钻石，但是设备太贵了，它们可能被认为是富人的玩具"
                 },
                 n1a: {
                     name: "星系",
-                    desc: "Gain more Points based on the total amount of stars you have in your card collection (crowned cards count as {0} stars each).<br>(Currently: {1} stars ⇒ {+2%} point gain)",
-                    quote: "In a galaxy, far, far away..."
+                    desc: "根据你收藏的卡片的星星总数获得更多点数 (王冠卡片每一张算作 {0} 星).<br>(当前: {1} 星 ⇒ {+2%} 点数增益)",
+                    quote: "在一个星系, 很远很远的地方..."
                 },
                 n1b: {
                     name: "皇家垃圾",
-                    desc: "Gain more Shreds based on the total amount of crowned cards you have in your collection.<br>(Currently: {0} crowned cards ⇒ {+1%} shred gain)",
-                    quote: "More valuable than regular junk"
+                    desc: "根据你收藏的王冠卡片的总数获得更多的碎片.<br>(当前: {0} 王冠卡片 ⇒ {+1%} 分解增益)",
+                    quote: "比普通的垃圾更值钱"
                 },
                 n1b2: {
                     name: "相簿",
-                    desc: "Gain more Shreds based on the amount of badges you've got.<br>(Currently: {0} badges ⇒ {+1%} shred gain)",
-                    quote: "Ahhh the memories"
+                    desc: "根据你获得的徽章数量获得更多碎片.<br>(当前: {0} 徽章 ⇒ {+1%} 分解增益)",
+                    quote: "啊，回忆"
                 },
                 n1c: {
                     name: "额外点数",
-                    desc: "Gain more Points based on the total amount of <rarity rarity='ex'></rarity> cards you have in your collection.<br>(Currently: {0} <rarity rarity='ex'></rarity> cards ⇒ {+1%} point gain)",
-                    quote: "More points doesn't hurt, right?"
+                    desc: "获得更多的点数，基于你的收藏中 <rarity rarity='ex'></rarity> 卡片的总数量.<br>(当前: {0} <rarity rarity='ex'></rarity> 卡片 ⇒ {+1%} 点数增益)",
+                    quote: "点数再多也无妨，对吧？"
                 },
                 n1d: {
                     name: "未来计算器",
-                    desc: "Gain more Points based on the total amount of stat entries you've unlocked.<br>(Currently: {0} entries ⇒ {+1%} point gain)",
+                    desc: "根据你解锁的统计条目的总数，获得更多的点数.<br>(当前: {0} 条目 ⇒ {+1%} 点数增益)",
                     quote: "1 ^ 2 + 3 = 4"
                 },
                 n1e: {
                     name: "奇怪的棋盘地板质疑现实",
-                    desc: "Gain more Shreds based on the total amount of skill reactions you've done.<br>(Currently: {0} reactions ⇒ {+1%} shred gain)",
-                    quote: "All the technological advancements, just for this"
+                    desc: "根据你完成的技能反应总数获得更多碎片.<br>(当前: {0} 反应 ⇒ {+1%} 分解增益)",
+                    quote: "所有的科技进步，就为了这个"
                 },
                 s_fire: {
                     name: "爆炸",
@@ -727,32 +727,32 @@ i18nStrings.chs = {
                 s_fire_1: {
                     name: "特大爆炸",
                     desc: "<b>爆炸</b> 技能每次触发跳过一个额外的 {+0s}.",
-                    quote: "Now with flying colors"
+                    quote: "现在有了出色的表现"
                 },
                 s_fire_2: {
                     name: "爆炸精通",
-                    desc: "<b>Burst</b> skill gains an additional {+0s} time skip per trigger every time you use this skill.<br>(Currently: {1} times ⇒ {+2s} time skip)",
-                    quote: "*particle accelerator noises*"
+                    desc: "<b>爆炸</b> 技能获得一个额外 {+0s} 时间跳过在每次触发时，当每次你使用这个技能时.<br>(当前: {1} 时间 ⇒ {+2s} 时间跳过)",
+                    quote: "*粒子加速器的声音*"
                 },
                 s_water: {
                     name: "冻结掉落",
-                    desc: "Unlock the <b>Freeze Drop</b> skill.",
-                    quote: "Do you wanna build a snowman?"
+                    desc: "解锁 <b>冻结掉落</b> 技能.",
+                    quote: "你想堆一个雪人吗?"
                 },
                 s_water_1: {
                     name: "缓慢但稳定",
-                    desc: "{+0%} card multiplier while <b>Freeze Drop</b> is active.",
-                    quote: "Better be slow to be sure"
+                    desc: "{+0%} 卡片乘数当 <b>冻结掉落</b> 激活时.",
+                    quote: "最好慢慢来确定"
                 },
                 s_water_2: {
                     name: "山顶",
-                    desc: "{+0%} <b>Freeze Drop</b>'s energy cap boost, but {+1%} card multiplier when energy cap is reached while <b>Freeze Drop</b> is active.",
+                    desc: "{+0%} <b>冻结掉落</b> 的能量上限提升, 但是 {+1%} 卡牌乘数，当能量达到上限时 <b>冻结掉落</b> 是激活的.",
                     quote: "🍓"
                 },
                 s_leaf: {
                     name: "肥料",
-                    desc: "Unlock the <b>Fertilizer</b> skill.",
-                    quote: "Faster trees means faster papers means faster shreds"
+                    desc: "解锁 <b>Fertilizer</b> 技能.",
+                    quote: "树木越快，纸就越快，分解就越快"
                 },
                 s_leaf_1: {
                     name: "培养",
@@ -761,22 +761,22 @@ i18nStrings.chs = {
                 },
                 s_sun: {
                     name: "光合作用",
-                    desc: "Unlock the <b>Photosynthesis</b> skill.",
-                    quote: "The sun is a not-so-deadly lazer"
+                    desc: "解锁 <b>光合作用</b> 技能.",
+                    quote: "太阳是不那么致命的激光"
                 },
                 s_sun_1: {
                     name: "额外照明",
-                    desc: "Increase <b>Photosynthesis</b>'s buff and debuff effect by {+0%}.",
-                    quote: "Is this a flashbang?"
+                    desc: "提高 <b>光合作用</b> 的增益和减益效果 {+0%}.",
+                    quote: "这是一个闪光弹吗?"
                 },
                 s_moon: {
                     name: "简化",
-                    desc: "Unlock the <b>Simplification</b> skill.",
-                    quote: "Can't hold all these currencies"
+                    desc: "解锁 <b>简化</b> 技能.",
+                    quote: "不能持有所有这些货币吗"
                 },
                 s_moon_1: {
                     name: "抽象",
-                    desc: "Increase <b>Simplification</b>'s buff by {+0%} but also its debuff by {+1%}.",
+                    desc: "提高 <b>简化</b> 的增益 {+0%} 以及它的减益 {+1%}.",
                     quote: "This card has been abstracted so much that I can't even bother to write a proper flavor text for it"
                 },
                 s_moon_2: {
@@ -888,15 +888,15 @@ i18nStrings.chs = {
     */
     stats: {
         general: {
-            name: "General", 
+            name: "概况", 
             items: {
                 timePlayed: {
-                    name: "Time played",
+                    name: "游戏时长",
                 },
             }
         },    
         cards: {
-            name: "Cards",
+            name: "卡片",
             items: {
                 cardsDrawn: {
                     name: "Cards {drawn}",
@@ -925,7 +925,7 @@ i18nStrings.chs = {
             }
         },
         points: {
-            name: "Points",
+            name: "点数",
             items: {
                 base: {
                     name: "Base gain",
@@ -942,77 +942,77 @@ i18nStrings.chs = {
             }
         },
         shreds: {
-            name: "Shreds",
+            name: "碎片",
             items: {
                 base: {
-                    name: "Base gain",
+                    name: "基础增益",
                 },
                 crownMult: {
-                    name: "Crowned card mult",
+                    name: "王冠卡片乘数",
                 },
                 rMult: {
-                    name: "<rarity rarity='r'></rarity>+ card mult",
+                    name: "<rarity rarity='r'></rarity>+ 卡片乘数",
                 },
                 srMult: {
-                    name: "<rarity rarity='sr'></rarity>+ card mult",
+                    name: "<rarity rarity='sr'></rarity>+ 卡片乘数",
                 },
                 ssrMult: {
-                    name: "<rarity rarity='ssr'></rarity>+ card mult",
+                    name: "<rarity rarity='ssr'></rarity>+ 卡片乘数",
                 },
                 urMult: {
-                    name: "<rarity rarity='ur'></rarity>+ card mult",
+                    name: "<rarity rarity='ur'></rarity>+ 卡片乘数",
                 },
             }
         },
         faction: {
-            name: "Faction",
+            name: "派系",
             items: {
                 chance: {
-                    name: "Power chance",
+                    name: "力量几率",
                 },
                 fire: {
-                    name: "Fire Power gain",
+                    name: "火之力增益",
                 },
                 water: {
-                    name: "Water Power gain",
+                    name: "水之力增益",
                 },
                 leaf: {
-                    name: "Leaf Power gain",
+                    name: "叶之力增益",
                 },
                 sun: {
-                    name: "Sun Power gain",
+                    name: "日之力增益",
                 },
                 moon: {
-                    name: "Moon Power gain",
+                    name: "月之力增益",
                 },
                 mult: {
-                    name: "All Power mult",
+                    name: "全部力量乘数",
                 },
                 calc: {
-                    name: "Gain on {draw}",
+                    name: "{draw} 增益",
                 },
             }
         },
         skills: {
-            name: "Skills",
+            name: "技能",
             items: {
                 fireUse: {
-                    name: "\"Burst\" use count",
+                    name: "\"爆炸\" 使用次数",
                 },
                 waterUse: {
-                    name: "\"Freeze Drop\" use count",
+                    name: "\"冻结掉落\" 使用次数",
                 },
                 leafUse: {
-                    name: "\"Fertilizer\" use count",
+                    name: "\"肥料\" 使用次数",
                 },
                 sunUse: {
-                    name: "\"Photosynthesis\" use count",
+                    name: "\"光合作用\" 使用次数",
                 },
                 moonUse: {
-                    name: "\"Simplification\" use count",
+                    name: "\"简化\" 使用次数",
                 },
                 reaction: {
-                    name: "Skill reactions",
+                    name: "技能反应",
                 },
             }
         }
