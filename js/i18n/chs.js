@@ -164,7 +164,7 @@ i18nStrings.chs = {
                     moon: "月 派系",
                 },
                 pickit: {
-                    off: "禁用自选奖励",
+                    off: "禁用精选溢价",
                     on: "显示可升级的卡片",
                 },
             }
@@ -350,36 +350,36 @@ i18nStrings.chs = {
 
             saved_title: "游戏已保存",
             saved_desc: "现在可以安全关闭此选项卡了.",
-            saved_noteLocal: "(Note: this game auto-saves after a minute since the last save and on certain events such as after a draw and when a setting is changed)",
-            saved_noteCloud: "(Note: this game auto-saves to the cloud after 5 minutes since the last cloud save)",
-            saved_text_title: "Copied save",
-            saved_text_desc: "Save data copied to clipboard.",
-            saved_file_title: "Downloading save...",
-            saved_file_desc: "Save data downloading as \"{0}\"...",
+            saved_noteLocal: "(注意：本游戏自上次保存一分钟后自动保存，并在某些事件，如平局后和设置更改时自动保存)",
+            saved_noteCloud: "(注意：本游戏自上次云保存后5分钟后自动保存至云端)",
+            saved_text_title: "复制存档",
+            saved_text_desc: "存档数据已复制到剪贴板.",
+            saved_file_title: "下载存档...",
+            saved_file_desc: "存档数据将下载保存为 \"{0}\"...",
 
-            import_error: "Invalid Save",
-            import_error_desc: "This save appears to be incorrect or corrupted. Make sure you have copied the entire save string and the save string is not truncated.",
-            import_error_desc_ellipsis: "Ellipsis detected in save string. Your save might have been truncated by the browser or the operating system. You can use the Download File option instead to make a more reliable backup.",
+            import_error: "无效的存档",
+            import_error_desc: "此保存似乎不正确或已损坏。确保复制了整个保存字符串，并且保存字符串没有被截断.",
+            import_error_desc_ellipsis: "在保存字符串中检测到省略号。您的保存可能已被浏览器或操作系统截断。您可以使用“下载文件”选项来进行更可靠的备份.",
 
-            import_confirm_title: "Import this save?",
-            import_confirm_desc: "Would you like to import this save? Your current game will be overridden!",
-            import_confirm_cloudcheck_title: "Older cloud save",
-            import_confirm_cloudcheck_desc: "The save on the cloud seems to be older than the current local save. Would you like to import the cloud save?",
-            import_confirm_cloudavail_title: "Cloud save available!",
-            import_confirm_cloudavail_desc: "There is a cloud save available. Would you like to import it?",
-            import_confirm_action_no: "No, go back",
-            import_confirm_action_yes: "Yes, import save",
+            import_confirm_title: "导入此存档?",
+            import_confirm_desc: "是否导入此存档？您当前的游戏进度将被覆盖!",
+            import_confirm_cloudcheck_title: "旧的云存档",
+            import_confirm_cloudcheck_desc: "云上的保存似乎比当前的本地保存更老。您想要导入云存档吗?",
+            import_confirm_cloudavail_title: "云存档可用!",
+            import_confirm_cloudavail_desc: "有一个可用的云存档。您要导入它吗？",
+            import_confirm_action_no: "不了，返回",
+            import_confirm_action_yes: "是的，导入存档",
 
-            reset_confirm_title: "Really hard reset?",
-            reset_confirm_desc1: "This action will <strong>COMPLETELY WIPE YOUR SAVE CLEAN.</strong> You'll go back to the very beginning of the game with <strong>NO BONUSES IN RETURN.</strong>",
-            reset_confirm_desc2: "The game will copy the current save data to your clipboard in case you change your mind.",
-            reset_confirm_action_no: "No, go back",
-            reset_confirm_action_yes: "Yes, hard reset",
+            reset_confirm_title: "你真的确定要硬重置?",
+            reset_confirm_desc1: "此操作将 <strong>彻底清除游戏进度.</strong> 你将回到游戏的最开始且 <strong>得不到任何奖励.</strong>",
+            reset_confirm_desc2: "游戏将复制当前保存的数据到你的剪贴板，以防你改变主意.",
+            reset_confirm_action_no: "不了，返回",
+            reset_confirm_action_yes: "是的，硬重置",
 
-            busy_saving_cloud: "Saving to cloud...",
-            busy_import: "Importing save...",
-            busy_reset: "Hard resetting...",
-            busy_desc: "(the game will reload in a moment, don't close the game in the process)",
+            busy_saving_cloud: "保存到云存储...",
+            busy_import: "导入存档...",
+            busy_reset: "硬重置...",
+            busy_desc: "(游戏很快就会重新加载，在这个过程中不要关闭游戏)",
 
             error_cloudSaveCooldown: "Please wait 30 seconds between cloud saves.",
             error_cloudCheckCooldown: "Please wait 30 seconds between cloud save checks.",
@@ -401,20 +401,20 @@ i18nStrings.chs = {
                 "<marquee>(look ma, i'm in a &lt;marquee&gt; tag!)</marquee>",
             ],
             strings: {
-                game: "Game by {0}",
-                libs: "Libraries used:",
-                music: "Music by {0}",
-                music_foot: "(hey that's me)",
-                icons: "Icons from various sources via {0}",
-                footer: "(would the game count as parody and thus eligible for fair use?<br>idk, i'm not a lawyer)"
+                game: "游戏作者 {0}",
+                libs: "使用的库:",
+                music: "音乐来自 {0}",
+                music_foot: "(嘿，那是我)",
+                icons: "来自各种来源的图标 {0}",
+                footer: "(这款游戏是否可以算作是模仿游戏，并因此获得合理使用的资格?<br>我不知道，我不是律师)"
             }
         },
         complete: {
             strings: {
-                title: "Game completed!",
-                line1: "You've successfully used up all of your one trillion free {draws}!",
-                line2: "It only took you {0} to do it.",
-                line3: "This is the end for now, you can wait for an update or you can go to Settings -> Hard Reset to play the game again.",
+                title: "游戏已完成!",
+                line1: "你已经成功地用完了你所有的一万亿免费{draws}!",
+                line2: "实现它只花了你 {0}.",
+                line3: "这是现在的结束，你可以等待更新，或者你可以进入 设置 -> 硬重置 可以再次玩游戏.",
             }
         },
     },
@@ -424,8 +424,8 @@ i18nStrings.chs = {
     */
     currencies: {
         cards: {
-            name: "Cards",
-            left: "Cards left",
+            name: "卡片",
+            left: "剩余卡片",
             quote: "Produced for the almighty Omega Cards game, these cards are actually vouchers for you to spend more money to {draw} more cards... after you use up all your one trillion free card {draws}, at least. They are too happy about giving people trillions of free card {draws}, in fact, everyone are",
         },
         energy: {
@@ -433,31 +433,31 @@ i18nStrings.chs = {
             quote: "Used as Omega Cards' loyalty program currency to allow you to trade in multiple card {draws} at once",
         },
         points: {
-            name: "Points",
+            name: "点数",
             quote: "The world's most generic currency. It is generic enough to be assigned any use case imaginable",
         },
         shreds: {
-            name: "Shreds",
+            name: "碎片",
             quote: "Remains of excess cards, reduced to atoms. These cards almost have no trade value (except for the few <rarity rarity='ex'></rarity> cards), so people are inventing new ways to use them, such as shredding them to use as a new upgrade currency",
         },
         fire: {
-            name: "Fire Power",
+            name: "火之力",
             quote: "Power from the fire faction. Some consider discovering this humans' greatest achievement",
         },
         water: {
-            name: "Water Power",
+            name: "水之力",
             quote: "Power from the water faction. Always reminds you to keep yourself hydrated",
         },
         leaf: {
-            name: "Leaf Power",
+            name: "叶之力",
             quote: "Power from the leaf faction. You feel yourself to be one with nature",
         },
         sun: {
-            name: "Sun Power",
+            name: "日之力",
             quote: "Power from the sun faction. Also believed to also have the power to control air",
         },
         moon: {
-            name: "Moon Power",
+            name: "月之力",
             quote: "Power from the moon faction. Also believed to also have the power to control earth",
         },
     },
@@ -469,171 +469,171 @@ i18nStrings.chs = {
         standard: {
             n: {
                 n0: {
-                    name: "The Nothing Square",
-                    desc: "No effect.",
-                    quote: "That one square that is programmed to be picked 99% of the time"
+                    name: "虚无方块",
+                    desc: "无效果.",
+                    quote: "这个方块被设定为99%的几率被选中"
                 },
                 n1: {
-                    name: "A Single Point",
-                    desc: "Gain {+0} points per {draw}.",
+                    name: "单点",
+                    desc: "获得 {+0} 点数每次 {draw}.",
                     quote: "ここにいる"
                 },
                 n2: {
-                    name: "Half A Point",
+                    name: "半点",
                     desc: "Randomly gain zero to {+0} points per {draw}.",
                     quote: "To explain what half a point even is, we'll need to talk about parallel universes-"
                 },
                 n3: {
-                    name: "Card Pack",
+                    name: "卡包",
                     desc: "{+0} base bulk. Base bulk increase the amount of {draws} you make at once.",
                     quote: "Well, if you want to use up all of those one trillion card {draws} you'll need to start {drawing} multiple of them at once, you know?"
                 },
                 n4: {
-                    name: "Self-Filling Pack",
+                    name: "自动填充卡包",
                     desc: "{+0} bulk power. Bulk power passively generates bulk energy.",
                     quote: "Incremental games, also known as idle games"
                 },
                 n5: {
-                    name: "Bigger Wrap",
+                    name: "更大的卡包",
                     desc: "{+0} bulk energy cap. Bulk energy production past the energy cap are slowed down.",
-                    quote: "You can idle for real this time"
+                    quote: "这次你真的可以闲下来了"
                 },
                 n6: {
-                    name: "Scissors",
+                    name: "剪刀",
                     desc: "{+0%} pack breaking speed.",
                     quote: "If you haven't noticed it yet, you can click the pack while it's breaking to break it faster"
                 },
                 n7: {
-                    name: "Fast Delivery",
+                    name: "快速交付",
                     desc: "{+0%} cooldown speed.",
                     quote: "Restock faster with our new fast delivery service — applied to all orders 1 card and above!",
                 },
                 c1: {
-                    name: "In-Game Shop",
-                    desc: "Unlock the Marketplace.",
+                    name: "游戏内商店",
+                    desc: "解锁市场.",
                     quote: "Find cards that can't be found from {drawing}, and probably spend all of your money trying to out-bid the highest bidder"
                 }
             },
             r: {
                 n0: {
-                    name: "Epic Shredding Machine",
+                    name: "史诗碎纸机",
                     desc: "{+0%} shred multiplier.",
                     quote: "Instead of using a small office-made shredder, why not use the giant ones made for ASMR videos on the internet?"
                 },
                 n0b: {
-                    name: "Amazing Shredding Moments",
-                    desc: "{+0%} shred multiplier.",
-                    quote: "Apparently people on the internet love watching things being shredded to pieces! You figure out you could record your Epic Shredding Machines shredding cards and upload it to PipeTube to earn some sweet, sweet ad revenue in the process"
+                    name: "神奇的分解时刻",
+                    desc: "{+0%} 分解乘数.",
+                    quote: "显然，互联网上的人们喜欢看东西被撕成碎片！你发现你可以把你的史诗碎纸机撕碎卡片的过程录下来，然后上传到PipeTube上，在这个过程中赚取一些丰厚的广告收入"
                 },
                 n1: {
-                    name: "Point Multiplier",
+                    name: "点数乘数",
                     desc: "{+0%} point multiplier.",
                     quote: "Every incremental game needs exponential growth, a generic currency needs a generic multiplier upgrade"
                 },
                 n1b: {
-                    name: "Money Press",
+                    name: "金钱印刷机",
                     desc: "{+0%} point multiplier.",
                     quote: "Press some of your shreds into money. This is precisely how legal money is made too, people won't even be able to notice a difference"
                 },
                 n2: {
-                    name: "Bulkier Card Packs",
+                    name: "更大的卡包",
                     desc: "{+0%} base bulk, but {+1%} cooldown duration.",
                     quote: "The bulkier, the better"
                 },
                 n3: {
-                    name: "Card Opener Factory",
+                    name: "开卡器工厂",
                     desc: "{+0%} bulk power, but {+1%} cooldown duration.",
                     quote: "Produces large quantity of card openers"
                 },
                 n3b: {
-                    name: "Recycling",
+                    name: "回收",
                     desc: "{+0%} bulk power.",
                     quote: "Reusing cards to open more cards is a good idea actually"
                 },
                 n3c: {
-                    name: "Composter",
+                    name: "堆肥机",
                     desc: "{+0%} bulk energy cap.",
                     quote: "Recycle even harder with this composter designed to make a metric-scrap-ton of cards"
                 },
                 n4: {
-                    name: "Endurance Training",
+                    name: "耐力训练",
                     desc: "{+0%} card multiplier, but {+1%} cooldown duration and pack breaking duration.",
                     quote: "The card packs got some endurance training! Now they are harder to break into, but the contents are increased!"
                 },
                 n5a: {
-                    name: "Trending",
+                    name: "趋势",
                     desc: "{+0} fire power per gain.",
                     quote: "ah,<br>that's hot,<br>..., that's hot"
                 },
                 n5b: {
-                    name: "Ocean",
+                    name: "海洋",
                     desc: "{+0} water power per gain.",
                     quote: "i'm blue da be dee da be die"
                 },
                 n5c: {
-                    name: "Forest",
+                    name: "森林",
                     desc: "{+0} leaf power per gain.",
                     quote: "team trees ftw"
                 },
                 n5d: {
-                    name: "Air",
+                    name: "空气",
                     desc: "{+0} sun power per gain.",
                     quote: "feel the breath"
                 },
                 n5e: {
-                    name: "Earth",
+                    name: "大地",
                     desc: "{+0} moon power per gain.",
                     quote: "it is our home"
                 },
                 c1: {
-                    name: "System 2",
-                    desc: "Unlock the Infobook. View your stats and other things, though with a price...",
-                    quote: "Erm ackstually 🤓"
+                    name: "系统 2",
+                    desc: "解锁 信息手册。查看你的数据和其他东西，尽管有一个价格...",
+                    quote: "嗯，当然 🤓"
                 }
             },
             sr: {
                 n0: {
-                    name: "Perfectly Generic Card",
-                    desc: "{+0%} point multiplier.",
+                    name: "完美通用卡",
+                    desc: "{+0%} 点数乘数.",
                     quote: "A perfectly generic card that boosts the perfectly generic currency, the genericness is getting too perfect to handle"
                 },
                 n1: {
-                    name: "A Pair of Points",
+                    name: "一对点数",
                     desc: "Raise the level in <b><rarity rarity='n'></rarity> A Single Point</b>'s effect by {^0:1}",
                     quote: "This is called a line"
                 },
                 n2: {
-                    name: "Dice Extractor",
+                    name: "骰子提取器",
                     desc: "Raise the level in <b><rarity rarity='n'></rarity> Half a Point</b>'s effect by {^0:1}",
                     quote: "Let the pips on the die guide you"
                 },
                 n3: {
-                    name: "Card Warehouse",
+                    name: "卡片仓库",
                     desc: "{+0%} bulk energy cap.",
                     quote: "At this rate you will need to get yourself a bigger room just so you can store all your cards"
                 },
                 n4a: {
-                    name: "Fire Power Mastery",
+                    name: "火之力精通",
                     desc: "{+0%} fire power, leaf power, and point gains.",
                     quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
                 },
                 n4b: {
-                    name: "Water Power Mastery",
+                    name: "水之力精通",
                     desc: "{+0%} water power, fire power, and point gains.",
                     quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
                 },
                 n4c: {
-                    name: "Leaf Power Mastery",
+                    name: "叶之力精通",
                     desc: "{+0%} leaf power, water power, and point gains.",
                     quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
                 },
                 n4d: {
-                    name: "Sun Power Mastery",
+                    name: "日之力精通",
                     desc: "{+0%} sun power, moon power, and point gains.",
                     quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
                 },
                 n4e: {
-                    name: "Moon Power Mastery",
+                    name: "月之力精通",
                     desc: "{+0%} moon power, sun power, and point gains.",
                     quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
                 },
@@ -643,7 +643,7 @@ i18nStrings.chs = {
                     quote: "Needs more dakka"
                 },
                 n5b: {
-                    name: "Deep Freeze",
+                    name: "深度冻结",
                     desc: "{/0:2} <b>Freeze Drop</b> cooldown.",
                     quote: "Near-absolute zero"
                 },
@@ -653,205 +653,205 @@ i18nStrings.chs = {
                     quote: "Why do one when you can do all of them?"
                 },
                 n5d: {
-                    name: "Summer",
+                    name: "夏天",
                     desc: "{/0:2} <b>Photosynthesis</b> cooldown.",
                     quote: "Beach episode not included"
                 },
                 n5e: {
-                    name: "College",
-                    desc: "{/0:2} <b>Simplification</b> cooldown.",
-                    quote: "Teaches students about critical thinking"
+                    name: "大学",
+                    desc: "{/0:2} <b>简化</b> 冷却.",
+                    quote: "教导学生批判性思维"
                 },
                 c1: {
-                    name: "Obsessive-Compulsive",
-                    desc: "Unlock the ability to filter cards by some criteria.",
-                    quote: "Must... keep it... organized..."
+                    name: "强迫症",
+                    desc: "解锁按一定条件筛选卡片的功能.",
+                    quote: "必须... 保持它... 有条理..."
                 }
             },
             ssr: {
                 n0: {
-                    name: "Homestretch",
+                    name: "最后冲刺",
                     desc: "{+0%} card multiplier.",
                     quote: "Thank you for going this far into the game! If you like it be sure to leave a like and subscribe for more content like this"
                 },
                 n0b: {
-                    name: "Scrap",
+                    name: "废料",
                     desc: "{x0} Shred gain from <rarity rarity='r'></rarity> and above cards.",
                     quote: "quack"
                 },
                 n0c: {
-                    name: "Pyrite",
+                    name: "黄铁矿",
                     desc: "{x0} Shred gain from <rarity rarity='sr'></rarity> and above cards.",
                     quote: "Despite it's being \"fool's gold\", it can still be used as an ingredient for the <rarity rarity='sr'></rarity> cards"
                 },
                 n0d: {
-                    name: "Diamond",
+                    name: "钻石",
                     desc: "{x0} Shred gain from <rarity rarity='ssr'></rarity> and above cards.",
                     quote: "Diamonds are actually quite common since there are already discoveries on how to fuse them from coal, but the equipments are so expensive that they might be considered rich people's toys"
                 },
                 n1a: {
-                    name: "Galaxy",
+                    name: "星系",
                     desc: "Gain more Points based on the total amount of stars you have in your card collection (crowned cards count as {0} stars each).<br>(Currently: {1} stars ⇒ {+2%} point gain)",
                     quote: "In a galaxy, far, far away..."
                 },
                 n1b: {
-                    name: "Royal Junk",
+                    name: "皇家垃圾",
                     desc: "Gain more Shreds based on the total amount of crowned cards you have in your collection.<br>(Currently: {0} crowned cards ⇒ {+1%} shred gain)",
                     quote: "More valuable than regular junk"
                 },
                 n1b2: {
-                    name: "Photo Book",
+                    name: "相簿",
                     desc: "Gain more Shreds based on the amount of badges you've got.<br>(Currently: {0} badges ⇒ {+1%} shred gain)",
                     quote: "Ahhh the memories"
                 },
                 n1c: {
-                    name: "Extra Points",
+                    name: "额外点数",
                     desc: "Gain more Points based on the total amount of <rarity rarity='ex'></rarity> cards you have in your collection.<br>(Currently: {0} <rarity rarity='ex'></rarity> cards ⇒ {+1%} point gain)",
                     quote: "More points doesn't hurt, right?"
                 },
                 n1d: {
-                    name: "Future Calculator",
+                    name: "未来计算器",
                     desc: "Gain more Points based on the total amount of stat entries you've unlocked.<br>(Currently: {0} entries ⇒ {+1%} point gain)",
                     quote: "1 ^ 2 + 3 = 4"
                 },
                 n1e: {
-                    name: "Weird Checkerboard Floor to Question Reality to",
+                    name: "奇怪的棋盘地板质疑现实",
                     desc: "Gain more Shreds based on the total amount of skill reactions you've done.<br>(Currently: {0} reactions ⇒ {+1%} shred gain)",
                     quote: "All the technological advancements, just for this"
                 },
                 s_fire: {
-                    name: "Burst",
-                    desc: "Unlock the <b>Burst</b> skill.",
-                    quote: "Who used explosion magic inside the dungeon again!?"
+                    name: "爆炸",
+                    desc: "解锁 <b>爆炸</b> 技能.",
+                    quote: "谁又在地牢里使用爆炸魔法了!?"
                 },
                 s_fire_1: {
-                    name: "Mega Burst",
-                    desc: "<b>Burst</b> skill skips an additional {+0s} per trigger.",
+                    name: "特大爆炸",
+                    desc: "<b>爆炸</b> 技能每次触发跳过一个额外的 {+0s}.",
                     quote: "Now with flying colors"
                 },
                 s_fire_2: {
-                    name: "Explosion Mastery",
+                    name: "爆炸精通",
                     desc: "<b>Burst</b> skill gains an additional {+0s} time skip per trigger every time you use this skill.<br>(Currently: {1} times ⇒ {+2s} time skip)",
                     quote: "*particle accelerator noises*"
                 },
                 s_water: {
-                    name: "Freeze Drop",
+                    name: "冻结掉落",
                     desc: "Unlock the <b>Freeze Drop</b> skill.",
                     quote: "Do you wanna build a snowman?"
                 },
                 s_water_1: {
-                    name: "Slow, but Steady",
+                    name: "缓慢但稳定",
                     desc: "{+0%} card multiplier while <b>Freeze Drop</b> is active.",
                     quote: "Better be slow to be sure"
                 },
                 s_water_2: {
-                    name: "Top of the Mountain",
+                    name: "山顶",
                     desc: "{+0%} <b>Freeze Drop</b>'s energy cap boost, but {+1%} card multiplier when energy cap is reached while <b>Freeze Drop</b> is active.",
                     quote: "🍓"
                 },
                 s_leaf: {
-                    name: "Fertilizer",
+                    name: "肥料",
                     desc: "Unlock the <b>Fertilizer</b> skill.",
                     quote: "Faster trees means faster papers means faster shreds"
                 },
                 s_leaf_1: {
-                    name: "Nurture",
-                    desc: "Increase <b>Fertilizer</b>'s multiplier effect by {x0:1}.",
-                    quote: "Take care of the trees"
+                    name: "培养",
+                    desc: "提高 <b>肥料</b> 的乘数效果 {x0:1}.",
+                    quote: "爱护树木"
                 },
                 s_sun: {
-                    name: "Photosynthesis",
+                    name: "光合作用",
                     desc: "Unlock the <b>Photosynthesis</b> skill.",
                     quote: "The sun is a not-so-deadly lazer"
                 },
                 s_sun_1: {
-                    name: "Extra Light",
+                    name: "额外照明",
                     desc: "Increase <b>Photosynthesis</b>'s buff and debuff effect by {+0%}.",
                     quote: "Is this a flashbang?"
                 },
                 s_moon: {
-                    name: "Simplification",
+                    name: "简化",
                     desc: "Unlock the <b>Simplification</b> skill.",
                     quote: "Can't hold all these currencies"
                 },
                 s_moon_1: {
-                    name: "Abstractify",
+                    name: "抽象",
                     desc: "Increase <b>Simplification</b>'s buff by {+0%} but also its debuff by {+1%}.",
                     quote: "This card has been abstracted so much that I can't even bother to write a proper flavor text for it"
                 },
                 s_moon_2: {
-                    name: "Abstractify^2",
+                    name: "抽象^2",
                     desc: "Raise the effective level in <rarity rarity='ssr'></rarity><b> Abstractify</b>'s buff effect by {^0:1}.",
                     quote: "Yeah, and this one either"
                 }
             },
             ur: {
                 n0: {
-                    name: "mom",
+                    name: "妈妈",
                     desc: "{+0%} base bulk, bulk power, energy cap, and card multiplier.<br>{+1%} shred gain.<br>{x2} point gain.",
                     quote: "<rarity rarity='ur'></rarity> mom's so buffed she's the strongest unit in the game"
                 },
                 n1a: {
-                    name: "Multi-Fire",
+                    name: "多重火力",
                     desc: "Allow stacking of <b>Burst</b> skills, up to {0} uses at once.",
                     quote: "Over 9000 revolutions per second"
                 },
                 n1b: {
-                    name: "The Sleeping Game",
+                    name: "睡眠游戏",
                     desc: "While <b>Freeze Drop</b> is active, increase bulk power by {+0%}, but decrease time skip amount of <b>Burst</b> by the same amount.",
                     quote: "Wait, that isn't what the initials mean?"
                 },
                 n1c1: {
-                    name: "Seed-Picking",
+                    name: "采种",
                     desc: "<b>Fertilizer</b> also multiply shred gains from crowned cards by {+0%}.",
                     quote: "Cherry-picking but with seeds. Let the best seed wins!"
                 },
                 n1c2: {
-                    name: "Electrolytes",
+                    name: "电解质",
                     desc: "<b>Fertilizer</b> also multiply base shred gains by {+0%}.",
                     quote: "It's got what plants crave"
                 },
                 n1d: {
-                    name: "Sticky Cards",
+                    name: "粘性卡片",
                     desc: "Factioned cards {drawn} while <b>Photosynthesis</b> is active have a {0%} chance to duplicate oneself.",
                     quote: "It's actually two cards stuck into one, why are there so many of them here?"
                 },
                 n1e: {
-                    name: "Synergism",
+                    name: "合作",
                     desc: "<b>Simplification</b>'s base buff effect gains {^0:1} of <rarity rarity=n></rarity> <b>Card Pack</b>'s effect.<br>(Currently: {+1})",
                     quote: "Oh my god is that a synergism reference?????"
                 }
             },
             ex: {
                 zip: {
-                    name: "StackRAR",
+                    name: "堆叠压缩",
                     desc: "Group together duplicate cards in the {draw} view, though the compression halves your card revealing speed in the process. Also remove the <span class='number'>100</span> bulk {draw} limit.",
                     quote: "Please note that StackRAR is not a free card. After a 40 day trial period you must either buy a license or burn this card off of your collection"
                 },
                 shred: {
-                    name: "Shredder",
+                    name: "碎纸机",
                     desc: "Duplicate cards that are useless are shredded into a new currency called Shreds, including crowned cards and cards with max stars.",
                     quote: "Act as if nothing has ever happened"
                 },
                 faction: {
-                    name: "Overused Faction System",
+                    name: "过度使用派系系统",
                     desc: "Unlock Factions. Use factioned {draws} to get factioned currencies and faction-specific cards. (Factioned currency has a rare chance to appear.)",
                     quote: "Long ago, the five factions lived together in harmony. Then, everything changed when the fire faction attacked."
                 },
                 pickit: {
-                    name: "pick-it Premium",
-                    desc: "Unlock the ability to filter upgradeable cards, albeit for a limited time.",
-                    quote: "You can go right to what you want to see. Nothing to get in your way. pick-it Premium will widen and deepen your card-browsing passions."
+                    name: "精选溢价",
+                    desc: "解锁过滤可升级卡牌的能力，尽管时间有限.",
+                    quote: "你可以直接去看你想看的。没有什么能阻挡你。精选溢价 将扩大和加深你的卡片浏览热情."
                 },
                 skills: {
-                    name: "Combo",
-                    desc: "Unlock active skills. (Individual skills are unlocked through factioned {drawing}.)",
+                    name: "组合",
+                    desc: "解锁主动技能. (个人技能解锁可以通过派系 {drawing}.)",
                     quote: "↑↑↓↓←→←→BA"
                 },
                 skills2: {
-                    name: "Incantation-less Magic Pack",
-                    desc: "Unlock cards that reduce cooldowns of skills.",
-                    quote: "Did you know that the earlier you learn incantation-less magic the easier it is to do it?"
+                    name: "无需咒语的魔法卡包",
+                    desc: "解锁减少技能冷却时间的卡片.",
+                    quote: "你知道吗，你越早学会不需要咒语的魔法就越容易做到?"
                 }
             }
         }
