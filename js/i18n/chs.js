@@ -29,16 +29,16 @@ i18nStrings.chs = {
         draw: {
             draw: "抽卡",
             draws: "抽卡",
-            drew: "抽卡",
-            drawn: "抽卡",
-            drawing: "抽卡",
+            drew: "抽取",
+            drawn: "已抽取",
+            drawing: "抽取",
         },
         pull: {
-            draw: "pull",
-            draws: "pulls",
-            drew: "pulled",
-            drawn: "pulled",
-            drawing: "pulling",
+            draw: "拉动",
+            draws: "拉动",
+            drew: "拉动",
+            drawn: "拉动的",
+            drawing: "拉动",
         },
         summon: {
             draw: "召唤",
@@ -49,11 +49,11 @@ i18nStrings.chs = {
         },
         roll: {
             _anim: "spin",
-            draw: "roll",
-            draws: "rolls",
-            drew: "rolled",
-            drawn: "rolled",
-            drawing: "rolling",
+            draw: "投掷",
+            draws: "投掷",
+            drew: "投掷",
+            drawn: "投掷的",
+            drawing: "投掷",
         },
         spin: {
             _anim: "转动",
@@ -263,7 +263,7 @@ i18nStrings.chs = {
         draw: {
             strings: {
                 brand: "DTCGco.™",
-                brand_full: "© DUDUCAT TRADING CARD GAME CO.",
+                brand_full: "© DUDUCAT 交易卡牌游戏公司",
                 pack_title: "欧米伽卡片",
                 pack_subtitle: "教师卡牌游戏",
                 pack_count: "卡包包含 {0} 卡片",
@@ -777,44 +777,44 @@ i18nStrings.chs = {
                 s_moon_1: {
                     name: "抽象",
                     desc: "提高 <b>简化</b> 的增益 {+0%} 以及它的减益 {+1%}.",
-                    quote: "This card has been abstracted so much that I can't even bother to write a proper flavor text for it"
+                    quote: "这张卡片已经被抽得太多了，我甚至都懒得为它写一个合适的文本"
                 },
                 s_moon_2: {
                     name: "抽象^2",
-                    desc: "Raise the effective level in <rarity rarity='ssr'></rarity><b> Abstractify</b>'s buff effect by {^0:1}.",
-                    quote: "Yeah, and this one either"
+                    desc: "提升有效等级 <rarity rarity='ssr'></rarity><b> 抽象</b> 的增益效果 {^0:1}.",
+                    quote: "是的，还有这个"
                 }
             },
             ur: {
                 n0: {
                     name: "妈妈",
-                    desc: "{+0%} base bulk, bulk power, energy cap, and card multiplier.<br>{+1%} shred gain.<br>{x2} point gain.",
+                    desc: "{+0%} 基础体积, 大功率, 能量上限, 和卡片乘数.<br>{+1%} 分解增益.<br>{x2} 点数增益.",
                     quote: "<rarity rarity='ur'></rarity> mom's so buffed she's the strongest unit in the game"
                 },
                 n1a: {
                     name: "多重火力",
-                    desc: "Allow stacking of <b>Burst</b> skills, up to {0} uses at once.",
-                    quote: "Over 9000 revolutions per second"
+                    desc: "允许堆叠 <b>爆炸</b> 技能, 一次性最多使用 {0} .",
+                    quote: "每秒超过9000转"
                 },
                 n1b: {
                     name: "睡眠游戏",
-                    desc: "While <b>Freeze Drop</b> is active, increase bulk power by {+0%}, but decrease time skip amount of <b>Burst</b> by the same amount.",
-                    quote: "Wait, that isn't what the initials mean?"
+                    desc: "当 <b>冻结掉落</b> 激活时, 提高大功率 {+0%}, 但减少时间跳跃数量关于 <b>爆炸</b> 同样的数量.",
+                    quote: "等等，这首字母不是这个意思吗？"
                 },
                 n1c1: {
                     name: "采种",
-                    desc: "<b>Fertilizer</b> also multiply shred gains from crowned cards by {+0%}.",
-                    quote: "Cherry-picking but with seeds. Let the best seed wins!"
+                    desc: "<b>肥料</b> 同时将来自王冠卡片的分解增益乘以 {+0%}.",
+                    quote: "采摘樱桃，但要带种子。让最好的种子获胜!"
                 },
                 n1c2: {
                     name: "电解质",
-                    desc: "<b>Fertilizer</b> also multiply base shred gains by {+0%}.",
-                    quote: "It's got what plants crave"
+                    desc: "<b>肥料</b> 也将基础分解增益乘以 {+0%}.",
+                    quote: "它有植物渴望的东西"
                 },
                 n1d: {
                     name: "粘性卡片",
-                    desc: "Factioned cards {drawn} while <b>Photosynthesis</b> is active have a {0%} chance to duplicate oneself.",
-                    quote: "It's actually two cards stuck into one, why are there so many of them here?"
+                    desc: "派系卡片 {drawn} 当 <b>光合作用</b> 激活时有一个 {0%} 几率去复制自己.",
+                    quote: "实际上是两张卡在一起，为什么这里有这么多卡？"
                 },
                 n1e: {
                     name: "合作",
@@ -835,7 +835,7 @@ i18nStrings.chs = {
                 },
                 faction: {
                     name: "过度使用派系系统",
-                    desc: "Unlock Factions. Use factioned {draws} to get factioned currencies and faction-specific cards. (Factioned currency has a rare chance to appear.)",
+                    desc: "解锁派系. Use factioned {draws} to get factioned currencies and faction-specific cards. (Factioned currency has a rare chance to appear.)",
                     quote: "Long ago, the five factions lived together in harmony. Then, everything changed when the fire faction attacked."
                 },
                 pickit: {
@@ -899,28 +899,28 @@ i18nStrings.chs = {
             name: "卡片",
             items: {
                 cardsDrawn: {
-                    name: "Cards {drawn}",
+                    name: "卡片 {drawn}",
                 },
                 bulkDraw: {
-                    name: "Base bulk",
+                    name: "基础体积",
                 },
                 bulkPower: {
-                    name: "Bulk power",
+                    name: "大功率",
                 },
                 bulkMult: {
-                    name: "Card multiplier",
+                    name: "卡片乘数",
                 },
                 cardRChance: {
-                    name: "<rarity rarity='r'></rarity> appear chance",
+                    name: "<rarity rarity='r'></rarity> 出现几率",
                 },
                 cardSRChance: {
-                    name: "<rarity rarity='sr'></rarity> appear chance",
+                    name: "<rarity rarity='sr'></rarity> 出现几率",
                 },
                 cardSSRChance: {
-                    name: "<rarity rarity='ssr'></rarity> appear chance",
+                    name: "<rarity rarity='ssr'></rarity> 出现几率",
                 },
                 cardURChance: {
-                    name: "<rarity rarity='ur'></rarity> appear chance",
+                    name: "<rarity rarity='ur'></rarity> 出现几率",
                 },
             }
         },
@@ -928,16 +928,16 @@ i18nStrings.chs = {
             name: "点数",
             items: {
                 base: {
-                    name: "Base gain",
+                    name: "基础增益",
                 },
                 extra: {
-                    name: "Random gain",
+                    name: "随机增益",
                 },
                 mult: {
-                    name: "Multiplier",
+                    name: "乘数",
                 },
                 calc: {
-                    name: "Gain on {draw}",
+                    name: "增益当 {draw}",
                 },
             }
         },
@@ -1023,44 +1023,44 @@ i18nStrings.chs = {
     */
     badges: {
         11: {
-            name: "Another Gacha Game to the Pile",
-            desc: "{Draw} cards for the first time.",
+            name: "另一款扭蛋游戏",
+            desc: "第一次 {Draw} 卡片.",
         },
         12: {
-            name: "Four-Leaf Clover",
-            desc: "Obtain an <rarity rarity='r'></rarity> card.",
+            name: "四叶草",
+            desc: "获得一张 <rarity rarity='r'></rarity> 卡片.",
         },
         13: {
-            name: "Luck or Dedication?",
-            desc: "Obtain an <rarity rarity='sr'></rarity> card.",
+            name: "运气还是奉献?",
+            desc: "获得一张 <rarity rarity='sr'></rarity> 卡片.",
         },
         14: {
-            name: "Plz plz plz Legendary",
-            desc: "Obtain an <rarity rarity='ssr'></rarity> card.",
+            name: "拜托拜托拜托传说",
+            desc: "获得一张 <rarity rarity='ssr'></rarity> 卡片.",
         },
         15: {
-            name: "Ultra Rare or Uber Rare?",
-            desc: "Obtain an <rarity rarity='ur'></rarity> card.",
+            name: "究极稀有或超级稀有?",
+            desc: "获得一张 <rarity rarity='ur'></rarity> 卡片.",
         },
         21: {
-            name: "Finally I can see what I'm doing!",
-            desc: "View your badges in-game.",
+            name: "我终于明白我在做什么了!",
+            desc: "在游戏中查看您的徽章.",
         },
         22: {
-            name: "Polar Opposites",
-            desc: "Create a skill reaction.",
+            name: "两极对立",
+            desc: "创造一种技能反应.",
         },
         23: {
-            name: "Just throw it away",
-            desc: "Make a no faction {draw} with Photosynthesis active.",
+            name: "把它丢掉",
+            desc: "创建一个 无派系 {draw} 且光合作用处于激活状态.",
         },
         24: {
-            name: "Safe and Sound",
-            desc: "Manually save your game data to the cloud, or export your save.",
+            name: "安然无恙",
+            desc: "手动保存你的游戏数据到云端，或者导出你的存档.",
         },
         31: {
-            name: "Would you like to buy more {draws}?",
-            desc: "Use all of your one trillion free {draws}.",
+            name: "你是否想购买更多 {draws}?",
+            desc: "使用你所有的一万亿免费 {draws}.",
         },
     },
 
@@ -1077,41 +1077,41 @@ i18nStrings.chs = {
     */
     slideshows: {
         1: {
-            name: "Intro",
+            name: "介绍",
             directives: [
                 ["image", "1"],
-                ["text", "The year is 2078."],
+                ["text", "这是 2078 年."],
                 ["image", "2"],
-                ["text", "Gacha gaming has become a way of life."],
-                ["text", "The thrilling experience of not knowing what items you'll get, the satisfying feeling when you get a rare {draw}, the flexibility and easiness to add gacha mechanics to every game in existence..."],
-                ["text", "People have found gacha games to be the best way to pass time, for casual players and the more competitive-minded players alike."],
-                ["text", "Though, when people talk about gacha games, that's not the most significant point to keep in mind."],
-                ["text", "It's the fact that..."],
+                ["text", "扭蛋游戏已经成为一种生活方式."],
+                ["text", "不知道你会得到什么东西的激动人心的体验，当你得到一个稀有 {draw} 东西时的满足感, 将扭蛋机制添加到现有游戏中的灵活性和易用性..."],
+                ["text", "人们发现扭蛋游戏是消磨时间的最佳方式，对休闲玩家和更具竞争意识的玩家来说都是如此."],
+                ["text", "然而，当人们谈论扭蛋游戏时，这并不是最重要的一点."],
+                ["text", "事实是..."],
                 ["image", "3"],
-                ["text", "They make a <i>lot</i> of money."],
-                ["text", "The gacha gaming scene has grown into a multi-millillion-dollar worth industry, far greater than any entertainment scene's worth, combined."],
-                ["text", "To chase the money, billions of gacha games are coming out every single blink of an eye."],
-                ["text", "Of course, since the market has become diluted with so many games, they need a way to introduce itself to players and prove that they're worth their time."],
+                ["text", "他们赚了 <i>很多</i> 钱."],
+                ["text", "扭蛋游戏领域已经发展成为价值数百万美元的产业，远远超过任何娱乐领域的价值总和."],
+                ["text", "为了赚钱，每一眨眼就有数十亿款扭蛋游戏问世."],
+                ["text", "当然，由于市场上的游戏越来越多，他们需要一种向玩家介绍自己的方式，并证明自己值得他们花时间."],
                 ["image", "4"],
-                ["text", "Enter the advertising scene."],
-                ["text", "Companies initially advertised their games by showing them good graphics and great gameplay mechanics."],
-                ["text", "But, that didn't seem to attract lots of players."],
-                ["text", "Eventually, they discovered that the most effective way to market a game is... to just give them lots of free stuff."],
-                ["text", "After all, virtual currencies and {draws} are in fact, virtual and can be given as much as the company wants."],
-                ["text", "As players get used to the larger numbers though, as soon as companies know it, players kept asking for more."],
-                ["text", "Companies can't afford to not give more, there will always be a game that decides to give more stuff and thus get more players and money."],
-                ["text", "In order to keep up with this, games kept giving more and more free stuff, until the numbers are so inflated they no longer has any real life meaning."],
+                ["text", "进入广告领域."],
+                ["text", "公司最初通过展示优秀的图像和出色的游戏机制来宣传自己的游戏."],
+                ["text", "但是，这似乎并没有吸引到很多玩家."],
+                ["text", "最终，他们发现营销游戏最有效的方法是……给他们很多免费的东西."],
+                ["text", "毕竟，虚拟货币和 {draws} 是虚拟的，公司想要多少就给多少."],
+                ["text", "随着玩家习惯了更大的数字，一旦公司知道了这一点，玩家就会继续要求更多."],
+                ["text", "公司不能不提供更多内容，总会有游戏决定提供更多内容，从而获得更多玩家和金钱."],
+                ["text", "为了跟上这一趋势，游戏不断提供越来越多的免费内容，直到数字膨胀到不再具有任何现实生活意义."],
                 ["image", "5"],
-                ["text", "You, a person in this society, lying in bed, are about to pick up a new gacha game."],
+                ["text", "你，这个社会中的一个人，躺在床上，准备拿起一款新的扭蛋游戏."],
                 ["image", "6"],
-                ["text", "Omega Cards, for the mobile devices, the first game of its kind to advertise a trillion free card {draws}. The number that's one followed by twelve zeroes."],
-                ["text", "To people 50 years ago, that sounded like a crazy amount of free {draws} to give, but the scene has caught up so fast that it's now just a lesser number compared to other games."],
-                ["text", "Though, you still see people on the internet come back to it from time to time for the nostalgia values."],
+                ["text", "为移动设备设计的欧米伽卡牌，这是第一款同类游戏宣称拥有一万亿免费卡片 {draws}. 1后面跟着12个0的数字."],
+                ["text", "对于50年前的人来说，这听起来是一个疯狂数量的免费 {draws} 的给予, 但这一领域发展得如此之快，以至于与其他游戏相比，这类游戏的数量较少."],
+                ["text", "尽管如此，你仍然可以在互联网上看到人们时不时地回到游戏中寻找怀旧价值."],
                 ["image", "5"],
-                ["text", "You found it interesting enough to start the game for the first time, though the game wants you to use up your one trillion {draws} first."],
-                ["text", "And that's when you realize..."],
+                ["text", "你觉得这很有趣，所以第一次开始游戏，尽管游戏希望你首先用光你的一万亿 {draws}."],
+                ["text", "这时你才意识到..."],
                 ["image", "7"],
-                ["text", "...you will definitely be here for a while."],
+                ["text", "...你一定会在这里一段时间."],
             ]
         }
     },
