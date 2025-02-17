@@ -64,11 +64,11 @@ i18nStrings.chs = {
             drawing: "转动",
         },
         gacha: {
-            draw: "gacha",
-            draws: "gacha",
-            drew: "gacha'd",
-            drawn: "gacha'd",
-            drawing: "gacha'ing",
+            draw: "扭蛋",
+            draws: "扭蛋",
+            drew: "扭蛋",
+            drawn: "扭蛋",
+            drawing: "扭蛋",
         }
     },
 
@@ -381,24 +381,24 @@ i18nStrings.chs = {
             busy_reset: "硬重置...",
             busy_desc: "(游戏很快就会重新加载，在这个过程中不要关闭游戏)",
 
-            error_cloudSaveCooldown: "Please wait 30 seconds between cloud saves.",
-            error_cloudCheckCooldown: "Please wait 30 seconds between cloud save checks.",
-            error_copy1: "There was an error trying to copy your save string into the clipboard.",
-            error_copy2: "You can still manually copy your save string from the text box by selecting all the text and copy it.",
-            error_loggedOut: "You are not logged in. Please log in in order to access cloud save functionalities.",
+            error_cloudSaveCooldown: "云保存间隔请等待30秒.",
+            error_cloudCheckCooldown: "请在云保存检查之间等待30秒.",
+            error_copy1: "试图将存档字符串复制到剪贴板时出错.",
+            error_copy2: "您仍然可以手动从文本框中复制保存字符串，方法是选择所有文本并复制它.",
+            error_loggedOut: "您没有登录。请登录以访问云保存功能.",
 
-            opt_keepPrefs: "Keep preferences",
-            opt_keepPrefs_noteReset: "(Note: preferences that are bound to an unlockable will be reset to default values)",
-            opt_keepPrefs_noteImport: "(Note: preferences that are bound to an unlockable will be reset to default values if said unlockable is not present in the new save)",
+            opt_keepPrefs: "保留偏好",
+            opt_keepPrefs_noteReset: "(注意：绑定到可解锁选项的首选项将重置为默认值)",
+            opt_keepPrefs_noteImport: "(注意：如果在新保存中没有提到可解锁参数，那么绑定到可解锁参数的首选项将被重置为默认值)",
         },
         about: {
             blabs: [
-                "(because we can't help ourselves from inflating free {draw} counts)",
-                "(because we can't help ourselves from advertising free {draw} counts)",
-                "(no-download game with cutting-edge web technologies)",
-                "(about as generous a gacha game could be)",
-                "(and you thought a-thousand-ish was too much)",
-                "<marquee>(look ma, i'm in a &lt;marquee&gt; tag!)</marquee>",
+                "(因为我们无法控制自己不去夸大免费 {draw} 的数量)",
+                "(因为免费 {draw} 的广告次数是我们无法控制的)",
+                "(无需下载的游戏与尖端的网络技术)",
+                "(这是扭蛋游戏中最慷慨的)",
+                "(你觉得一千来个太多了)",
+                "<marquee>(看，妈妈，我在一个 &lt;marquee&gt; 标签里!)</marquee>",
             ],
             strings: {
                 game: "游戏作者 {0}",
@@ -595,67 +595,67 @@ i18nStrings.chs = {
                 n0: {
                     name: "完美通用卡",
                     desc: "{+0%} 点数乘数.",
-                    quote: "A perfectly generic card that boosts the perfectly generic currency, the genericness is getting too perfect to handle"
+                    quote: "一张完美的通用卡牌可以提升完美的通用货币，这种通用性变得太完美了"
                 },
                 n1: {
                     name: "一对点数",
-                    desc: "Raise the level in <b><rarity rarity='n'></rarity> A Single Point</b>'s effect by {^0:1}",
-                    quote: "This is called a line"
+                    desc: "提升等级对于 <b><rarity rarity='n'></rarity> 单点</b> 的效果 {^0:1}",
+                    quote: "这叫做一条线"
                 },
                 n2: {
                     name: "骰子提取器",
-                    desc: "Raise the level in <b><rarity rarity='n'></rarity> Half a Point</b>'s effect by {^0:1}",
-                    quote: "Let the pips on the die guide you"
+                    desc: "提升等级对于 <b><rarity rarity='n'></rarity> 半点</b> 的效果 {^0:1}",
+                    quote: "让骰子上的点来指引你"
                 },
                 n3: {
                     name: "卡片仓库",
-                    desc: "{+0%} bulk energy cap.",
-                    quote: "At this rate you will need to get yourself a bigger room just so you can store all your cards"
+                    desc: "{+0%} 能量体积上限.",
+                    quote: "照这样下去，你得给自己找个更大的房间，这样才能存放你所有的卡片"
                 },
                 n4a: {
                     name: "火之力精通",
-                    desc: "{+0%} fire power, leaf power, and point gains.",
-                    quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
+                    desc: "{+0%} 火之力, 叶之力, 和点数增益.",
+                    quote: "是的，这些 <rarity rarity='sr'></rarity> 卡牌真的只是复制和粘贴，你不认为所有扭蛋游戏都是这么做的吗？"
                 },
                 n4b: {
                     name: "水之力精通",
-                    desc: "{+0%} water power, fire power, and point gains.",
-                    quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
+                    desc: "{+0%} 水之力, 火之力, 和点数增益.",
+                    quote: "是的，这些 <rarity rarity='sr'></rarity> 卡牌真的只是复制和粘贴，你不认为所有扭蛋游戏都是这么做的吗？"
                 },
                 n4c: {
                     name: "叶之力精通",
-                    desc: "{+0%} leaf power, water power, and point gains.",
-                    quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
+                    desc: "{+0%} 叶之力, 水之力, 和点数增益.",
+                    quote: "是的，这些 <rarity rarity='sr'></rarity> 卡牌真的只是复制和粘贴，你不认为所有扭蛋游戏都是这么做的吗？"
                 },
                 n4d: {
                     name: "日之力精通",
-                    desc: "{+0%} sun power, moon power, and point gains.",
-                    quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
+                    desc: "{+0%} 日之力, 月之力, 和点数增益.",
+                    quote: "是的，这些 <rarity rarity='sr'></rarity> 卡牌真的只是复制和粘贴，你不认为所有扭蛋游戏都是这么做的吗？"
                 },
                 n4e: {
                     name: "月之力精通",
-                    desc: "{+0%} moon power, sun power, and point gains.",
-                    quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
+                    desc: "{+0%} 月之力, 日之力, 和点数增益.",
+                    quote: "是的，这些 <rarity rarity='sr'></rarity> 卡牌真的只是复制和粘贴，你不认为所有扭蛋游戏都是这么做的吗？"
                 },
                 n5a: {
-                    name: "Rapid Fire",
-                    desc: "{/0:2} <b>Burst</b> cooldown.",
-                    quote: "Needs more dakka"
+                    name: "快速射击",
+                    desc: "{/0:2} <b>爆炸</b> 冷却.",
+                    quote: "需要更多的dakka"
                 },
                 n5b: {
                     name: "深度冻结",
-                    desc: "{/0:2} <b>Freeze Drop</b> cooldown.",
-                    quote: "Near-absolute zero"
+                    desc: "{/0:2} <b>冻结掉落</b> 冷却.",
+                    quote: "接近绝对零度"
                 },
                 n5c: {
                     name: "NPK",
-                    desc: "{/0:2} <b>Fertilizer</b> cooldown.",
-                    quote: "Why do one when you can do all of them?"
+                    desc: "{/0:2} <b>肥料</b> 冷却.",
+                    quote: "当你能做所有的事情时，为什么只做一件呢?"
                 },
                 n5d: {
                     name: "夏天",
-                    desc: "{/0:2} <b>Photosynthesis</b> cooldown.",
-                    quote: "Beach episode not included"
+                    desc: "{/0:2} <b>光合作用</b> 冷却.",
+                    quote: "未包含海滩章节"
                 },
                 n5e: {
                     name: "大学",
@@ -818,25 +818,25 @@ i18nStrings.chs = {
                 },
                 n1e: {
                     name: "合作",
-                    desc: "<b>Simplification</b>'s base buff effect gains {^0:1} of <rarity rarity=n></rarity> <b>Card Pack</b>'s effect.<br>(Currently: {+1})",
-                    quote: "Oh my god is that a synergism reference?????"
+                    desc: "<b>简化</b> 的基础Buff效果增益 {^0:1} 对于 <rarity rarity=n></rarity> <b>卡包</b>的效果.<br>(当前: {+1})",
+                    quote: "我的天，这是协同作用的说法?????"
                 }
             },
             ex: {
                 zip: {
                     name: "堆叠压缩",
-                    desc: "Group together duplicate cards in the {draw} view, though the compression halves your card revealing speed in the process. Also remove the <span class='number'>100</span> bulk {draw} limit.",
-                    quote: "Please note that StackRAR is not a free card. After a 40 day trial period you must either buy a license or burn this card off of your collection"
+                    desc: "将重复的卡片组合在一起在 {draw} 视图里, 虽然压缩过程中的卡片显示速度减半。同时去掉了 <span class='number'>100</span> 批量 {draw} 上限.",
+                    quote: "请注意，堆叠压缩 不是一张免费卡。在40天的试用期后，您必须购买许可证或从您的收藏中烧掉这张卡"
                 },
                 shred: {
                     name: "碎纸机",
-                    desc: "Duplicate cards that are useless are shredded into a new currency called Shreds, including crowned cards and cards with max stars.",
-                    quote: "Act as if nothing has ever happened"
+                    desc: "重复的无用卡将被粉碎成一种新的货币，称为碎片，包括王冠卡片和满星卡.",
+                    quote: "就像什么都没发生过一样"
                 },
                 faction: {
                     name: "过度使用派系系统",
-                    desc: "解锁派系. Use factioned {draws} to get factioned currencies and faction-specific cards. (Factioned currency has a rare chance to appear.)",
-                    quote: "Long ago, the five factions lived together in harmony. Then, everything changed when the fire faction attacked."
+                    desc: "解锁派系. 使用派系 {draws} 获得不同派系的货币和特定派系的卡牌. (派系货币有极低概率出现.)",
+                    quote: "很久以前，这五个派系和睦相处。然后，当火派系进攻时，一切都变了."
                 },
                 pickit: {
                     name: "精选溢价",
@@ -862,24 +862,24 @@ i18nStrings.chs = {
     */
     skills: {
         fire: {
-            name: "Burst",
-            desc: "Instantly gain {0} worth of bulk energy.",
+            name: "爆炸",
+            desc: "立即获得 {0} 大功率.",
         },
         water: {
-            name: "Freeze Drop",
-            desc: "Increase the bulk energy cap by {0} until the next {draw}, but increase its cooldown by {1}.",
+            name: "冻结掉落",
+            desc: "提高能量体积上限 {0} 直到下一次 {draw}, 但是增加它的冷却时长 {1}.",
         },
         leaf: {
-            name: "Fertilizer",
-            desc: "Increase all shred multiplier per rarity increase by {0} for the next {draw}.",
+            name: "肥料",
+            desc: "每稀有度增加所有分裂乘数 {0} 当下一次 {draw}.",
         },
         sun: {
-            name: "Photosynthesis",
-            desc: "Increase faction power gain by {0} for the next {draw}, but decrease point and shred gain by {1}."
+            name: "光合作用",
+            desc: "提高派系力量增益 {0} 当下一次 {draw}, 但减少点数和分解增益 {1}."
         },
         moon: {
-            name: "Simplification",
-            desc: "Increase point gain by {0} for the next {draw}, but decrease faction power gain by {1}."
+            name: "简化",
+            desc: "提高点数增益 {0} 当下一次 {draw}, 但减少派系力量增益 {1}."
         },
     },
     
