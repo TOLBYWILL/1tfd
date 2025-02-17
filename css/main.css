@@ -193,7 +193,9 @@ button.f-moon {
     --bg-1: var(--button-moon-bg-1);
     --bg-2: var(--button-moon-bg-2);
 }
-
+h1{
+    text-align: center;
+}
 
 h1, h2, h3, h4, h5 {
     margin-block: 0;
