@@ -382,7 +382,7 @@ var cnItems = {
     "in": "需要",
     "English": "英文",
     "Language": "语言",
-    "": "",
+    "Simplified Chinese": "简体中文(官方)",
     "": "",
     "": "",
     "": "",
