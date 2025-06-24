@@ -1,7 +1,9 @@
 let cloud = {};
 
 function initCloud() {
-    if (document.referrer.includes("https://galaxy.click")) {
+    if (!document.referrer) {
+        console.error(`document.referrer is empty, how`)
+    } else if (new URL(document.referrer).hostname == "galaxy.click") {
         initGalaxyAPI();
     }
 }
@@ -68,7 +70,8 @@ function initGalaxyAPI() {
             id: game.id,
             timestamp: Date.now(),
             timePlayed: game.stats.timePlayed, 
-            cardsDrawn: game.stats.cardsDrawn
+            cardsDrawn: game.stats.cardsDrawn, 
+            accountsSold: game.stats.accountsSold
         }),
         data: getTextSaveString()
     }).then((data) => {

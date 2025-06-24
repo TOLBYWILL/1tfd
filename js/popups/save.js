@@ -129,7 +129,13 @@ popups.save = {
                 saveGame = () => { return false; }
                 callPopup("prompt", i18n.busy_import(), i18n.busy_desc(), {});
                 localStorage.setItem(SAVE_KEY, LZString.compress(JSON.stringify(importData)));
-                window.location.reload();
+                if (cloud.save) {
+                    game = importData;
+                    saveToCloud(0, () => {
+                        window.location.reload();
+                    }, true);
+                }
+                else window.location.reload();
             }
         });
 
@@ -153,6 +159,7 @@ popups.save = {
         }
 
         makeSummaryEntry(str.stats.general.items.timePlayed.name(), format.time(importData.stats.timePlayed));
+        if (importData.stats.accountsSold) makeSummaryEntry(str.stats.legacy.items.accountsSold.name(), format(importData.stats.accountsSold, 0, 13));
         makeSummaryEntry(verbify(str.stats.cards.items.cardsDrawn.name()), format(importData.stats.cardsDrawn, 0, 13));
     }
 }

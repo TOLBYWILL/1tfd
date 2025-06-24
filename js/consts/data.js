@@ -16,10 +16,14 @@ function getNewGame() {
             leaf: 0,
             sun: 0,
             moon: 0,
+
+            money: 0,
+            exp: 0,
         },
         flags: {
             statUnlocks: {},
             showSeen: {},
+            boughtPacks: {},
         },
         time: {
             now: Date.now(),
@@ -27,12 +31,22 @@ function getNewGame() {
             skillCooldowns: {},
             skillStacks: {},
             pickit: 5,
+            adCooldown: 0,
         },
         stats: {
             timePlayed: 0,
+            timeProgress: 0,
+
             cardsDrawn: 0,
             skillsUsed: {},
             reactionCount: 0,
+
+            accountsSold: 0,
+            legacyCardsDrawn: 0,
+        },
+        buffs: {
+            active: {},
+            adOffer: "",
         },
         cards: {},
         badges: {},
@@ -46,6 +60,9 @@ function getNewGame() {
             cardImages: 1,
             verb: "draw",
             music: "",
+            confirm: {
+                sellAccount: true,
+            }
         },
     }
 }

@@ -1,8 +1,10 @@
+/** @type {ReturnType<typeof getNewGame>} */
 let game = {}
 let lastSaveTime = Date.now();
 let lastCloudSaveTime = Date.now();
 let lastCloudCheckTime = Date.now();
 let cloudStatus = "";
+let cloudSaveSafe = false;
 
 function loadGame() {
     let newGame = getNewGame();
@@ -22,10 +24,13 @@ function checkCloudSave(explicit = false) {
         cloudStatus = "";
         cloud.state.loggedOut = false;
         console.log(data[0]?.timestamp, saveTime);
-        if (data[0] && data[0].timestamp > saveTime) {
-            if (data[0].id == game.id) loadFromCloud(0, "cloudcheck");
-            else if (game.stats.timePlayed < 10) loadFromCloud(0, "cloudavail");
+        if (data[0]) {
+            cloudSaveSafe = false;
+            if (data[0].id == game.id && data[0].timestamp - 10000 > saveTime) loadFromCloud(0, "cloudcheck");
+            else if (data[0].id != game.id) loadFromCloud(0, "cloudavail");
+            else cloudSaveSafe = true;
         } else {
+            cloudSaveSafe = true;
             if (data[0]) lastCloudSaveTime = data[0].timestamp;
             lastCloudCheckTime = game.time.now;
         }
@@ -43,6 +48,8 @@ function checkCloudSave(explicit = false) {
 
 function saveGame() {
     if (popups.draw.elms.list && popups.draw.state.phase != "done") return;
+    if (popups.drawLegacy.elms.list && !popups.sell.state.canSave) return;
+    if (popups.sell.elms.popup && !popups.sell.state.canSave) return;
     try {
         localStorage.setItem(SAVE_KEY, LZString.compress(JSON.stringify(game)));
         lastSaveTime = Date.now();
@@ -53,8 +60,8 @@ function saveGame() {
     }
 }
 
-function saveToCloud(slot = 0, func) {
-    if (!cloud.save || cloudStatus) return;
+function saveToCloud(slot = 0, func, forced) {
+    if (!cloud.save || cloudStatus || (!cloudSaveSafe && !forced)) return;
     cloudStatus = "saving";
     cloud.save(slot).then(() => {
         cloudStatus = "";

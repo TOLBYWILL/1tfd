@@ -2,6 +2,7 @@ const baseEffect = {
     bulk: 1,
     bulkPower: 0,
     bulkMult: 1,
+    bulkMultBonus: 1,
 
     cardRChance: 1e-3,
     cardSRChance: 0.99999e-5,
@@ -9,6 +10,7 @@ const baseEffect = {
     cardURChance: 0.99999e-9,
 
     energyCap: 10,
+    energySpeed: 1,
     
     points: 0,
     pointsExtra: 0,
@@ -26,6 +28,11 @@ const baseEffect = {
     leafGain: 1,
     sunGain: 1,
     moonGain: 1,
+    fireDrawMult: 1,
+    waterDrawMult: 1,
+    leafDrawMult: 1,
+    sunDrawMult: 1,
+    moonDrawMult: 1,
     factionMult: 1,
     factionChance: 1e-6,
 
@@ -58,6 +65,17 @@ const baseEffect = {
     skillMoonBuff: 5,
     skillMoonDebuff: 2,
     skillMoonCooldown: 600,
+
+    offlineLimit: 0,
+    offlineLimitStrength: 0.4,
+
+    legacyDrawCount: 3,
+    legacyPickCount: 1,
+
+    adCooldown: 900,
+    adPointBoost: 4,
+    adShredBoost: 3,
+    adDrawDurationMult: 1,
 }
 
 const flags = {
@@ -66,9 +84,13 @@ const flags = {
         shreds: false,
         energy: false,
         market: false,
+        zip: false,
         faction: false,
         skills: false,
         pickit: false,
+        iris: false,
+        legacy: false,
+        ad: false,
     }
 }
 
@@ -84,10 +106,32 @@ const priority = {
 const statEntries = {
     general: {
         items: {
-            timePlayed: {
-                display: () => _number(format.time(game.stats.timePlayed, 4)),
+            timeProgress: {
+                display: () => _number(format.time(game.stats.timeProgress, 4)),
                 cost: [100, "points"],
                 event: "frame",
+            },
+            timePlayed: {
+                display: () => _number(format.time(game.stats.timePlayed, 4)),
+                cost: [100000, "points"],
+                event: "frame",
+            },
+        }
+    },
+    legacy: {
+        condition: () => flags.unlocked.legacy,
+        items: {
+            accountsSold: {
+                display: () => _number(format(game.stats.accountsSold)),
+                cost: [1, "exp"],
+            },
+            sep1: {
+                separator: true,
+                condition: () => flags.unlocked.legacy,
+            },
+            legacyCardsDrawn: {
+                display: () => _number(format(game.stats.legacyCardsDrawn)),
+                cost: [1, "exp"],
             },
         }
     },

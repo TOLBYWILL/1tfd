@@ -80,6 +80,7 @@ let i18nDefault = i18nStrings.en = {
 
         draw: "{Draw}",
         draw_inCooldown: "In cooldown",
+        draw_outOfDraws: "Out of {draws}...",
         switch: {
             no: "Switch to no faction",
             fire: "Switch to fire faction",
@@ -91,6 +92,8 @@ let i18nDefault = i18nStrings.en = {
         skills: {
             active: "Active",
         },
+
+        new: "NEW!",
 
         hint_title: "You've got {0} free {draws}!",
         hint_desc: "Click this big “{Draw}” button below to start {drawing} some of them!",
@@ -144,6 +147,10 @@ let i18nDefault = i18nStrings.en = {
         collection: {
             name: "Collection",
             filters: {
+                type: {
+                    regular: "Regular",
+                    legacy: "Legacy",
+                },
                 rarity: {
                     any: "Any rarity",
                     n: "<rarity rarity='n'></rarity> cards", 
@@ -166,13 +173,47 @@ let i18nDefault = i18nStrings.en = {
                     off: "Disable pick-it Premium",
                     on: "Show upgradeable cards",
                 },
+                iris: {
+                    info1: "Here lies numbers that are provided by irisVision:",
+                    infoInHand: "The left number shows the amount of unique card variations you have in your collection.",
+                    infoInPool: "The middle number shows the amount of unique card variations that have met its condition to be in the draw pool or appear in the Marketplace.",
+                    infoInGame: "The right number shows the amount of unique card variations that is available in the current game run.",
+                    info2: "You can use card filters to influence these numbers and deduce actions needed to obtain cards that are not yet discovered.",
+                },
             }
         },
         marketplace: {
             name: "Marketplace",
+            subtabs: {
+                meta: "Online Marketplace",
+                ingame: "In-Game Shop",
+            },
             headers: {
+                accountMarket: "Account Marketplace",
                 exCards: "<rarity rarity='ex'></rarity> Cards",
-            }
+                boosterPacks: "Booster Packs",
+                cinema: "Absolute Cinema",
+            },
+            strings: {
+                sellAccount: "Account Adoption Service",
+                sellAccount_desc: "We buy gacha game accounts for competitive prices!",
+                sellAccount_gain: "You'll gain:",
+                sellAccount_gain_money: "{0}<br>Money",
+                sellAccount_gain_exp: "{0}<br>Experience",
+                sellAccount_req: "Requires {0} card {drawn}",
+                sellAccount_action: "Sell Account!",
+                sellAccount_actionLocked: "Locked",
+
+                ad_title: "“Ad” Booster",
+                ad_effects: {
+                    points_draw: "“Watch” an “ad” and gain {x0:1} more points for the next {1} {draws}!",
+                    shreds_draw: "“Watch” an “ad” and gain {x0:1} more shreds for the next {1} {draws}!",
+                    energy_time: "“Watch” an “ad” and gain passive Bulk Energy {x0:1} faster for {1s}!",
+                },
+                ad_cooldown: "New “ads” will become available in {0}",
+                ad_action: "“Watch” “Ad”",
+                ad_actionCooldown: "On cooldown",
+            },
         },
         infobook: {
             name: "Infobook",
@@ -220,7 +261,7 @@ let i18nDefault = i18nStrings.en = {
                     enabled: "Enabled",
                 },
                 notation: {
-                    default: "Default (follows language)",
+                    default: "Default",
                     common: "Common",
                     scientific: "Scientific",
                     engineering: "Engineering",
@@ -236,10 +277,12 @@ let i18nDefault = i18nStrings.en = {
 
                 cloud_type_galaxy: "(connected to galaxy)",
                 cloud_loggedOut: "(logged out)",
-                cloud_state_saving: "(saving...)",
-                cloud_state_loading: "(loading...)",
-                cloud_state_checking: "(checking...)",
+                cloud_status_saving: "(saving...)",
+                cloud_status_loading: "(loading...)",
+                cloud_status_checking: "(checking...)",
 
+                language_desc: "Languages other than English may not be 100% finished or accurate.",
+                notation_desc: "Change how large numbers are expressed in the game. The “Default” number format is based on the current language.",
                 verb_desc: "Change the verb associated with {drawing} cards, in places such as the game title and item descriptions.",
                 john_note: "(Note: links open in this tab, ctrl+click to not accidentally close the game)",
             },
@@ -256,8 +299,8 @@ let i18nDefault = i18nStrings.en = {
             desc_error: "There was an error: {0}",
             desc_pleaseWait: "Please wait.",
 
-            action_close: "Close",
             action_continue: "Continue",
+            action_close: "Close",
         },
         draw: {
             strings: {
@@ -265,8 +308,11 @@ let i18nDefault = i18nStrings.en = {
                 brand_full: "© DUDUCAT TRADING CARD GAME CO.",
                 pack_title: "OMEGA CARDS",
                 pack_subtitle: "TRADING CARD GAME",
-                pack_count: "PACK OF {0} CARDS",
+                pack_count: "PACK OF<br>{0} CARDS",
             },
+        },
+        drawLegacy: {
+            title: "Pick {0}",
         },
         currency: {
             strings: {
@@ -276,6 +322,27 @@ let i18nDefault = i18nStrings.en = {
                 toCap: "({0} until cap)",
                 efficiency: "({0} efficiency)",
             }
+        },
+        confirm: {
+            sellAccount: {
+                title: "Really sell account?",
+                desc1: "You will start over with a new game account, however you'll earn <b>Money</b> and <b>Experience</b> based on your performance.",
+                desc2: "<strong>There's no buying back</strong>—the game will save when you sell your account!",
+                confirm: "Ask me to confirm the next time I sell my account",
+
+                list_lose: "You'll lose:",
+                list_lose1: "Your regular card collection",
+                list_lose2: "Points, shreds, and faction currencies",
+                list_lose3: "Skills and usage statistics",
+
+                list_gain: "You'll gain:",
+                list_gainMoney: "{0} Money",
+                list_gainExp: "{0} Experience",
+
+
+                action_no: "No, go back",
+                action_yes: "Yes, sell account",
+            },
         },
         card: {
             factions: {
@@ -312,6 +379,14 @@ let i18nDefault = i18nStrings.en = {
                 star_button: "Fuse",
                 star_button_cant: "Can't fuse",
                 star_button_max: "Max star reached",
+
+                buy_cost: "Purchase cost:",
+                buy_prompt: "Click to purchase.",
+                buy_button: "Purchase",
+                buy_button_cant: "Can't purchase",
+
+                legacyDraw_prompt: "Click to pick this card.",
+                legacyDraw_button: "Pick",
             }
         },
         skill: {
@@ -323,6 +398,53 @@ let i18nDefault = i18nStrings.en = {
                 action_activated: "Activated",
                 action_inCooldown: "In cooldown ({0})"
             }
+        },
+        pack: {
+            buy_confirm: "Would you like to purchase “{0}”?",
+            perks: "This booster pack contains:",
+            
+            buy_action_no: "No, go back",
+            buy_action_yes: "Purchase for {0}",
+
+            strings: {
+                pack: "(booster pack)",
+            }
+        },
+        buff: {
+            strings: {
+                buff: "(buff)",
+            }
+        },
+        ad: {
+            strings: {
+                sponsored: ["“Sponsored”", "“Promoted”", "“Advertisement”"],
+                taunts: {
+                    generic: [
+                        "Complete this level to end ad early",
+                        "I can't reach pink color",
+                        "I sold my soul to reach pink color",
+                        "Most relaxing game!",
+                        "Harder than it looks",
+                        "You:"
+                    ],
+                    puzzle: [
+                        "If you complete this puzzle, you're legally skilled",
+                        "If you solve this puzzle, you're legally allowed to close this ad early",
+                        "I don't think you can complete this puzzle",
+                        "I bet you can't solve this puzzle",
+                        "Can you solve this puzzle?",
+                        "I sold my soul to complete this puzzle",
+                    ],
+                    completed: [
+                        "You did it!",
+                        "Amazing!",
+                        "Congratulations!",
+                    ],
+                }
+            },
+
+            action_close: "Close “Ad”",
+            action_closeIn: "Close in {0}",
         },
         badge: {
             strings: {
@@ -341,7 +463,7 @@ let i18nDefault = i18nStrings.en = {
         save: {
             ie_title: "Import/Export Save",
             ie_desc1: "The text box below contains your save data. Copy your save and keep it somewhere safe.",
-            ie_desc2: "Alternatively, paste your save there and press \"Import from Text Box\" to load the save.",
+            ie_desc2: "Alternatively, paste your save there and press “Import from Text Box” to load the save.",
             ie_action_save_text: "Copy to Clipboard",
             ie_action_save_file: "Download File",
             ie_action_load_text: "Import from Text Box",
@@ -349,12 +471,12 @@ let i18nDefault = i18nStrings.en = {
 
             saved_title: "Game saved",
             saved_desc: "It is now safe to close this tab.",
-            saved_noteLocal: "(Note: this game auto-saves after a minute since the last save and on certain events such as after a draw and when a setting is changed)",
+            saved_noteLocal: "(Note: this game auto-saves after a minute since the last save and on certain events such as after a {draw} and when a setting is changed)",
             saved_noteCloud: "(Note: this game auto-saves to the cloud after 5 minutes since the last cloud save)",
             saved_text_title: "Copied save",
             saved_text_desc: "Save data copied to clipboard.",
             saved_file_title: "Downloading save...",
-            saved_file_desc: "Save data downloading as \"{0}\"...",
+            saved_file_desc: "Save data downloading as “{0}”...",
 
             import_error: "Invalid Save",
             import_error_desc: "This save appears to be incorrect or corrupted. Make sure you have copied the entire save string and the save string is not truncated.",
@@ -398,15 +520,59 @@ let i18nDefault = i18nStrings.en = {
                 "(about as generous a gacha game could be)",
                 "(and you thought a-thousand-ish was too much)",
                 "<marquee>(look ma, i'm in a &lt;marquee&gt; tag!)</marquee>",
+                "(truly a bulktastic game)",
             ],
             strings: {
                 game: "Game by {0}",
+                openSource: "This game is licensed under <b>MIT License</b>",
+                viewLicense: "View license",
+                viewSource: "View source code",
                 libs: "Libraries used:",
                 music: "Music by {0}",
                 music_foot: "(hey that's me)",
-                icons: "Icons from various sources via {0}",
-                footer: "(would the game count as parody and thus eligible for fair use?<br>idk, i'm not a lawyer)"
+                icons: "Icons from various sources, provided via {0}",
+                footer: "(would the game count as parody and thus eligible for fair use?<br>idk, i'm not a lawyer)",
+                thanks: "Special thanks to:",
+                thanks1: "All those mobile game ads",
+                thanks1_foot: "(for the inspiration)",
             }
+        },
+        offline: {
+            title: "Welcome back!",
+            desc_time: "You were away for {0}.",
+            desc_timeReduced: "(reduced to {0} of offline progress)",
+            desc_event: "While you're away:",
+            events: {
+                nothing: "Nothing particularly interesting happened...",
+                energy: "Bulk energy changed from {0} to {1}",
+                cooldown: "{Draw} cooldown changed from {0} to {1}",
+                skillCooldown: "“{0}” cooldown changed from {1} to {2}",
+                skillStack: "“{0}” stack changed from {1} to {2}",
+                pickitTime: "pick-it time changed from {0} to {1}",
+                adCooldown: "“Ad” Booster cooldown changed from {0} to {1}",
+            }
+        },
+        sell: {
+            decor: {
+                username: "Username",
+                password: "Password",
+                accountSelling: "Selling account...",
+                accountSold: "Account sold.",
+                accountNew: "Creating new account...",
+                accountLogIn: "Logging in...",
+            },
+        },
+        sellResult: {
+            title: "Account Summary",
+            pointHeaders: {
+                obtained: "Obtained",
+            },
+            points: {
+                money: "{0} Money",
+                exp: "{0} Experience",
+                legacyDraw: "{0} Legacy cards",
+            },
+            action_continue: "Create New Account",
         },
         complete: {
             strings: {
@@ -459,6 +625,15 @@ let i18nDefault = i18nStrings.en = {
             name: "Moon Power",
             quote: "Power from the moon faction. Also believed to also have the power to control earth",
         },
+
+        money: {
+            name: "Money",
+            quote: "It's like the world's most generic currency, but actually usable in real life! Just about anything that has value in real life also has money's involvement!... Price inflation and the reduction of buying power? What's that?",
+        },
+        exp: {
+            name: "Experience",
+            quote: "The amount of knowledge you have gathered by playing gacha games. We planned on making it more realistic by relying on you actually learning every bit of nuances of the games but everything in the world has been so gamified with incremental game mechanics even this kind of stuff are now treated as a tangible, measurable, and consumable currency",
+        },
     },
 
     /** 
@@ -468,19 +643,19 @@ let i18nDefault = i18nStrings.en = {
         standard: {
             n: {
                 n0: {
-                    name: "The Nothing Square",
+                    name: "No Rewards?",
                     desc: "No effect.",
-                    quote: "That one square that is programmed to be picked 99% of the time"
+                    quote: "That one option that is programmed to be picked 99% of the time"
                 },
                 n1: {
-                    name: "A Single Point",
+                    name: "A Single Dot",
                     desc: "Gain {+0} points per {draw}.",
                     quote: "ここにいる"
                 },
                 n2: {
-                    name: "Half A Point",
+                    name: "Half A Dot",
                     desc: "Randomly gain zero to {+0} points per {draw}.",
-                    quote: "To explain what half a point even is, we'll need to talk about parallel universes-"
+                    quote: "To explain what half a dot even is, we'll need to talk about parallel universes-"
                 },
                 n3: {
                     name: "Card Pack",
@@ -517,7 +692,7 @@ let i18nDefault = i18nStrings.en = {
                 n0: {
                     name: "Epic Shredding Machine",
                     desc: "{+0%} shred multiplier.",
-                    quote: "Instead of using a small office-made shredder, why not use the giant ones made for ASMR videos on the internet?"
+                    quote: "Instead of using a small shredder made for the offices, why not use those industrial ones made for ASMR videos on the internet?"
                 },
                 n0b: {
                     name: "Amazing Shredding Moments",
@@ -530,9 +705,9 @@ let i18nDefault = i18nStrings.en = {
                     quote: "Every incremental game needs exponential growth, a generic currency needs a generic multiplier upgrade"
                 },
                 n1b: {
-                    name: "Money Press",
+                    name: "Point Press",
                     desc: "{+0%} point multiplier.",
-                    quote: "Press some of your shreds into money. This is precisely how legal money is made too, people won't even be able to notice a difference"
+                    quote: "Press some of your shreds into points. This is precisely how legal points are made too, people won't even be able to notice a difference"
                 },
                 n2: {
                     name: "Bulkier Card Packs",
@@ -559,30 +734,45 @@ let i18nDefault = i18nStrings.en = {
                     desc: "{+0%} card multiplier, but {+1%} cooldown duration and pack breaking duration.",
                     quote: "The card packs got some endurance training! Now they are harder to break into, but the contents are increased!"
                 },
+                n4b: {
+                    name: "Flip Attack",
+                    desc: "{+0%} card revealing speed.",
+                    quote: "Reverse card, block, draw 4"
+                },
                 n5a: {
                     name: "Trending",
-                    desc: "{+0} fire power per gain.",
+                    desc: "{+0} base fire power gain.",
                     quote: "ah,<br>that's hot,<br>..., that's hot"
                 },
                 n5b: {
                     name: "Ocean",
-                    desc: "{+0} water power per gain.",
+                    desc: "{+0} base water power gain.",
                     quote: "i'm blue da be dee da be die"
                 },
                 n5c: {
                     name: "Forest",
-                    desc: "{+0} leaf power per gain.",
+                    desc: "{+0} base leaf power gain.",
                     quote: "team trees ftw"
                 },
                 n5d: {
                     name: "Air",
-                    desc: "{+0} sun power per gain.",
+                    desc: "{+0} base sun power gain.",
                     quote: "feel the breath"
                 },
                 n5e: {
                     name: "Earth",
-                    desc: "{+0} moon power per gain.",
+                    desc: "{+0} base moon power gain.",
                     quote: "it is our home"
+                },
+                n6a: {
+                    name: "Buttered Popcorn",
+                    desc: "{+0:1} base point boost from “Ad” Booster.",
+                    quote: "Wait, you're telling me people actually enjoy watching ads!?"
+                },
+                n6b: {
+                    name: "Caramel Popcorn",
+                    desc: "{+0:1} base shred boost from “Ad” Booster.",
+                    quote: "Sweet taste for your sweet ad revenue"
                 },
                 c1: {
                     name: "System 2",
@@ -598,12 +788,12 @@ let i18nDefault = i18nStrings.en = {
                 },
                 n1: {
                     name: "A Pair of Points",
-                    desc: "Raise the level in <b><rarity rarity='n'></rarity> A Single Point</b>'s effect by {^0:1}",
+                    desc: "Raise the level in <b><rarity rarity='n'></rarity> A Single Dot</b>'s effect by {^0:1}",
                     quote: "This is called a line"
                 },
                 n2: {
                     name: "Dice Extractor",
-                    desc: "Raise the level in <b><rarity rarity='n'></rarity> Half a Point</b>'s effect by {^0:1}",
+                    desc: "Raise the level in <b><rarity rarity='n'></rarity> Half a Dot</b>'s effect by {^0:1}",
                     quote: "Let the pips on the die guide you"
                 },
                 n3: {
@@ -614,27 +804,27 @@ let i18nDefault = i18nStrings.en = {
                 n4a: {
                     name: "Fire Power Mastery",
                     desc: "{+0%} fire power, leaf power, and point gains.",
-                    quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
+                    quote: "Yes, our commentary for these <rarity rarity='sr'></rarity> cards really are just copy-and-pasted from each other, you don't think every gacha game does this all the time?"
                 },
                 n4b: {
                     name: "Water Power Mastery",
                     desc: "{+0%} water power, fire power, and point gains.",
-                    quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
+                    quote: "Yes, our commentary for these <rarity rarity='sr'></rarity> cards really are just copy-and-pasted from each other, you don't think every gacha game does this all the time?"
                 },
                 n4c: {
                     name: "Leaf Power Mastery",
                     desc: "{+0%} leaf power, water power, and point gains.",
-                    quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
+                    quote: "Yes, our commentary for these <rarity rarity='sr'></rarity> cards really are just copy-and-pasted from each other, you don't think every gacha game does this all the time?"
                 },
                 n4d: {
                     name: "Sun Power Mastery",
                     desc: "{+0%} sun power, moon power, and point gains.",
-                    quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
+                    quote: "Yes, our commentary for these <rarity rarity='sr'></rarity> cards really are just copy-and-pasted from each other, you don't think every gacha game does this all the time?"
                 },
                 n4e: {
                     name: "Moon Power Mastery",
                     desc: "{+0%} moon power, sun power, and point gains.",
-                    quote: "Yes, these <rarity rarity='sr'></rarity> cards really are just copy and paste, you don't think every gacha game does this all the time?"
+                    quote: "Yes, our commentary for these <rarity rarity='sr'></rarity> cards really are just copy-and-pasted from each other, you don't think every gacha game does this all the time?"
                 },
                 n5a: {
                     name: "Rapid Fire",
@@ -661,17 +851,22 @@ let i18nDefault = i18nStrings.en = {
                     desc: "{/0:2} <b>Simplification</b> cooldown.",
                     quote: "Teaches students about critical thinking"
                 },
+                n6a: {
+                    name: "Less Frequent Ads",
+                    desc: "“Ad” Booster buffs based on draw count last {0%} longer.",
+                    quote: "Apprarently there was a limit on how much we could spam ads to players before it starts being counter-productive and drive people away from our game. Maybe we should try reducing the frequency where player watch ads?"
+                },
                 c1: {
-                    name: "Obsessive-Compulsive",
+                    name: "pick-it",
                     desc: "Unlock the ability to filter cards by some criteria.",
-                    quote: "Must... keep it... organized..."
+                    quote: "With pick-it™ you can sort and filter cards by all criterias you can think of!... except for the sorting by card popularity one, that one requires a monthly subscription"
                 }
             },
             ssr: {
                 n0: {
                     name: "Homestretch",
                     desc: "{+0%} card multiplier.",
-                    quote: "Thank you for going this far into the game! If you like it be sure to leave a like and subscribe for more content like this"
+                    quote: "You've made it into half of your draws (logarithmically)! If you like this game be sure to leave a like and subscribe for more content like this"
                 },
                 n0b: {
                     name: "Scrap",
@@ -681,7 +876,7 @@ let i18nDefault = i18nStrings.en = {
                 n0c: {
                     name: "Pyrite",
                     desc: "{x0} Shred gain from <rarity rarity='sr'></rarity> and above cards.",
-                    quote: "Despite it's being \"fool's gold\", it can still be used as an ingredient for the <rarity rarity='sr'></rarity> cards"
+                    quote: "Despite it's being “fool's gold”, it can still be used as an ingredient for the <rarity rarity='sr'></rarity> cards"
                 },
                 n0d: {
                     name: "Diamond",
@@ -714,7 +909,7 @@ let i18nDefault = i18nStrings.en = {
                     quote: "1 ^ 2 + 3 = 4"
                 },
                 n1e: {
-                    name: "Weird Checkerboard Floor to Question Reality to",
+                    name: "Weirdly AI-Generated Checkerboard Floor to Question Reality to",
                     desc: "Gain more Shreds based on the total amount of skill reactions you've done.<br>(Currently: {0} reactions ⇒ {+1%} shred gain)",
                     quote: "All the technological advancements, just for this"
                 },
@@ -740,12 +935,12 @@ let i18nDefault = i18nStrings.en = {
                 },
                 s_water_1: {
                     name: "Slow, but Steady",
-                    desc: "{+0%} card multiplier while <b>Freeze Drop</b> is active.",
+                    desc: "{+0%} bonus card multiplier while <b>Freeze Drop</b> is active.",
                     quote: "Better be slow to be sure"
                 },
                 s_water_2: {
                     name: "Top of the Mountain",
-                    desc: "{+0%} <b>Freeze Drop</b>'s energy cap boost, but {+1%} card multiplier when energy cap is reached while <b>Freeze Drop</b> is active.",
+                    desc: "You draw {+1%} more cards when energy cap is reached while <b>Freeze Drop</b> is active.<br>{+0%} <b>Freeze Drop</b>'s energy cap boost.",
                     quote: "🍓"
                 },
                 s_leaf: {
@@ -795,10 +990,25 @@ let i18nDefault = i18nStrings.en = {
                     desc: "Allow stacking of <b>Burst</b> skills, up to {0} uses at once.",
                     quote: "Over 9000 revolutions per second"
                 },
+                n1a1: {
+                    name: "Absorption",
+                    desc: "{+0%} <b>Burst</b> skill's time skip and cooldown.",
+                    quote: "Slow, but strong"
+                },
+                n1a0: {
+                    name: "Ash to Cards",
+                    desc: "{+0%} card multiplier when fire faction is active.",
+                    quote: "Use ashes of trees to infuse them into cards, why didn't we thought of this sooner?"
+                },
                 n1b: {
                     name: "The Sleeping Game",
                     desc: "While <b>Freeze Drop</b> is active, increase bulk power by {+0%}, but decrease time skip amount of <b>Burst</b> by the same amount.",
                     quote: "Wait, that isn't what the initials mean?"
+                },
+                n1b0: {
+                    name: "Waterproof Cards",
+                    desc: "{+0%} card multiplier when water faction is active.",
+                    quote: "Now cards can't be destroyed by getting wet—just think of how many card collections that could be saved from floods!"
                 },
                 n1c1: {
                     name: "Seed-Picking",
@@ -810,16 +1020,31 @@ let i18nDefault = i18nStrings.en = {
                     desc: "<b>Fertilizer</b> also multiply base shred gains by {+0%}.",
                     quote: "It's got what plants crave"
                 },
+                n1c0: {
+                    name: "Home-grown Tree Farm",
+                    desc: "{+0%} card multiplier when leaf faction is active.",
+                    quote: "Bring Maryland to your home"
+                },
                 n1d: {
                     name: "Sticky Cards",
                     desc: "Factioned cards {drawn} while <b>Photosynthesis</b> is active have a {0%} chance to duplicate oneself.",
                     quote: "It's actually two cards stuck into one, why are there so many of them here?"
                 },
+                n1d0: {
+                    name: "Ultra-Bright Papers",
+                    desc: "{+0%} card multiplier when sun faction is active.",
+                    quote: "With our unbelivably bright papers rated 99.9999% ISO, you can make the most light-reflecting cards for the most special cards on the solar system!"
+                },
                 n1e: {
                     name: "Synergism",
                     desc: "<b>Simplification</b>'s base buff effect gains {^0:1} of <rarity rarity=n></rarity> <b>Card Pack</b>'s effect.<br>(Currently: {+1})",
                     quote: "Oh my god is that a synergism reference?????"
-                }
+                },
+                n1e0: {
+                    name: "Ultra-Dark Ink",
+                    desc: "{+0%} card multiplier when moon faction is active.",
+                    quote: "Vantablack ain't got nothing with this"
+                },
             },
             ex: {
                 zip: {
@@ -832,15 +1057,25 @@ let i18nDefault = i18nStrings.en = {
                     desc: "Duplicate cards that are useless are shredded into a new currency called Shreds, including crowned cards and cards with max stars.",
                     quote: "Act as if nothing has ever happened"
                 },
+                offline: {
+                    name: "Truly Idle",
+                    desc: "Allow Bulk Energy to accumulate while the game is not open, but gains are reduced after {0} minutes of offline time.",
+                    quote: "Drowning at work? I've got just the perfect card for you..."
+                },
                 faction: {
                     name: "Overused Faction System",
-                    desc: "Unlock Factions. Use factioned {draws} to get factioned currencies and faction-specific cards. (Factioned currency has a rare chance to appear.)",
+                    desc: "Unlock Factions. Use factioned {draws} to get factioned currencies and faction-specific cards.<br>Note: Faction currencies can sometimes shy away from appearing.",
                     quote: "Long ago, the five factions lived together in harmony. Then, everything changed when the fire faction attacked."
                 },
                 pickit: {
                     name: "pick-it Premium",
-                    desc: "Unlock the ability to filter upgradeable cards, albeit for a limited time.",
+                    desc: "Unlock the pick-it Premium sorting, which sorts cards by cheapest upgrade price first and filters out un-upgradable cards, albeit for a limited time.",
                     quote: "You can go right to what you want to see. Nothing to get in your way. pick-it Premium will widen and deepen your card-browsing passions."
+                },
+                iris: {
+                    name: "irisVision",
+                    desc: "Unlock the ability to view your card collection progress on the Collection tab.",
+                    quote: "The irisVision works by searching the online database of the game for any cards that is available in the object pool. You *could* just look these info up on the internet yourself but you wouldn't get any side-effect bonuses from <rarity rarity='ssr'></rarity> Royal Junk and similar cards that way so..."
                 },
                 skills: {
                     name: "Combo",
@@ -852,6 +1087,82 @@ let i18nDefault = i18nStrings.en = {
                     desc: "Unlock cards that reduce cooldowns of skills.",
                     quote: "Did you know that the earlier you learn incantation-less magic the easier it is to do it?"
                 }
+            }
+        },
+        standard_legacy: {
+            n: {
+                n0: {
+                    name: "Fancier Dots",
+                    desc: "{+0%} point gains.",
+                    quote: "Now your dots can wear hats! Dots that wear hats are worth more than regular dots"
+                },
+                n1: {
+                    name: "Military-Grade Shredders",
+                    desc: "{+0%} shred gains.",
+                    quote: "Leave no traces with this specially-designed shredder that are efficient at shredding top-secret cards! Smaller shred particles means more inflated shred counts!"
+                },
+                n2: {
+                    name: "Generational Inheritage",
+                    desc: "{+0%} all faction currency gains.",
+                    quote: "TIL my father is a very respected Omega Cards player"
+                },
+                n2a: {
+                    name: "Scroll of Flame",
+                    desc: "{+0%} fire power gains.",
+                    quote: "WIP"
+                },
+                n2b: {
+                    name: "Scroll of Waves",
+                    desc: "{+0%} water power gains.",
+                    quote: "WIP"
+                },
+                n2c: {
+                    name: "Scroll of Plants",
+                    desc: "{+0%} leaf power gains.",
+                    quote: "WIP"
+                },
+                n2d: {
+                    name: "Scroll of Light",
+                    desc: "{+0%} sun power gains.",
+                    quote: "WIP"
+                },
+                n2e: {
+                    name: "Scroll of Tranquillity",
+                    desc: "{+0%} moon power gains.",
+                    quote: "WIP"
+                },
+                n3: {
+                    name: "Mana Gatherer",
+                    desc: "{+0%} faction power chance.",
+                    quote: "Collects mana power from ambient space"
+                },
+                n4: {
+                    name: "Starting Deck",
+                    desc: "{+0} base bulk.<br>{+0} card multiplier.",
+                    quote: "Collects mana power from ambient space"
+                },
+            },
+            ex: {
+                legacy: {
+                    name: "Omega Cards Legacy",
+                    desc: "Unlock Legacy cards that are transferrable between accounts. When you obtain this card or sell an account, choose {0} out of {1} Legacy cards to add to your collection.",
+                    quote: "Tear this card into pieces. Throw the pieces into the playing area from a distance of at least five feet. Everything the pieces touch now permanently belongs to you. Collect the cards and put them into the bottom of your draw pile while everyone look at you in a weird way"
+                },
+                zip: {
+                    name: "7Stack",
+                    desc: "Group together duplicate cards in the {draw} view. Remove the <rarity rarity='ex'></rarity> <b>StackRAR</b> card from the Marketplace.",
+                    quote: "It's day 41 already"
+                },
+                pickit: {
+                    name: "Card Suite",
+                    desc: "Unlocks the card filtering and progress viewing features from <rarity rarity='sr'></rarity> <b>pick-it</b>, and <rarity rarity='ex'></rarity> <b>irisVision</b>; but remove the cards from appearing in the game.",
+                    quote: "Announcement: The popular Quality of Life feature everyone is enjoying is now free!<br/>※Except for the card popularity sorting feature, a monthly fee is still required"
+                },
+                ads: {
+                    name: "You're the Product",
+                    desc: "Unlock the ability to gain temporary boosts by “watching” “advertisements”.",
+                    quote: "T̴̡̅̓ḧ̵̩́͌e̴̪̼̐͌r̴̼̉é̶͚'̷͎͗s̵̗̎̿ ̸̩͝ń̴̹̣̓o̴̜͒ ̶͙̪̐ȅ̶͔̰s̴̡̨͋c̷̪͑̄a̵̢̞̐́p̴͕̟̈́̊e̸͖̫̋͠"
+                },
             }
         }
     },
@@ -881,6 +1192,20 @@ let i18nDefault = i18nStrings.en = {
             desc: "Increase point gain by {0} for the next {draw}, but decrease faction power gain by {1}."
         },
     },
+
+    packs: {
+        standard: {
+            legacy: {
+                name: "Legacy Expansion Pack",
+                desc: 
+                    "Unlock new ways to play with all-new <strong><i>transferrable cards</i></strong>!<br>" +
+                    "Comes with not one, not two, but <strong><i>four</i></strong> exclusive <rarity rarity='ex'></rarity> cards!",
+                perks: [
+                    "Four new <rarity rarity='ex'></rarity> cards"
+                ]
+            }
+        },
+    },
     
     /** 
      * Strings related to stat entries.
@@ -889,8 +1214,22 @@ let i18nDefault = i18nStrings.en = {
         general: {
             name: "General", 
             items: {
+                timeProgress: {
+                    name: "Game time",
+                },
                 timePlayed: {
-                    name: "Time played",
+                    name: "Active play time",
+                },
+            }
+        },    
+        legacy: {
+            name: "Legacy", 
+            items: {
+                accountsSold: {
+                    name: "Accounts sold",
+                },
+                legacyCardsDrawn: {
+                    name: "Legacy cards {drawn}",
                 },
             }
         },    
@@ -996,25 +1335,47 @@ let i18nDefault = i18nStrings.en = {
             name: "Skills",
             items: {
                 fireUse: {
-                    name: "\"Burst\" use count",
+                    name: "“Burst” uses",
                 },
                 waterUse: {
-                    name: "\"Freeze Drop\" use count",
+                    name: "“Freeze Drop” uses",
                 },
                 leafUse: {
-                    name: "\"Fertilizer\" use count",
+                    name: "“Fertilizer” uses",
                 },
                 sunUse: {
-                    name: "\"Photosynthesis\" use count",
+                    name: "“Photosynthesis” uses",
                 },
                 moonUse: {
-                    name: "\"Simplification\" use count",
+                    name: "“Simplification” uses",
                 },
                 reaction: {
                     name: "Skill reactions",
                 },
             }
         }
+    },
+
+    /** 
+     * Strings related to buffs, such as their names or descriptions.
+    */
+    buffs: {
+        draw: {
+            pointsMult: {
+                name: "Point UP",
+                desc: "Point gains are multiplied by {x0:1} for the next {1} draws!",
+            },
+            shredsMult: {
+                name: "Shred UP",
+                desc: "Shred gains are multiplied by {x0:1} for the next {1} draws!",
+            },
+        },
+        time: {
+            energySpeed: {
+                name: "Supercharged",
+                desc: "Passive Bulk Energy gain is {x0:1} faster for {1s}!",
+            },
+        },
     },
 
     /** 
@@ -1057,9 +1418,17 @@ let i18nDefault = i18nStrings.en = {
             name: "Safe and Sound",
             desc: "Manually save your game data to the cloud, or export your save.",
         },
+        25: {
+            name: "Two whole cours",
+            desc: "Play the game for 24 anime episodes.",
+        },
         31: {
             name: "Would you like to buy more {draws}?",
             desc: "Use all of your one trillion free {draws}.",
+        },
+        32: {
+            name: "Everywhere I go, I see this achievement",
+            desc: "“Watch” an “ad”.",
         },
     },
 
@@ -1112,6 +1481,64 @@ let i18nDefault = i18nStrings.en = {
                 ["image", "7"],
                 ["text", "...you will definitely be here for a while."],
             ]
-        }
+        },
+        2: {
+            name: "End of Free Trial",
+            directives: [
+                ["image", "1"],
+                ["text", "..."],
+                ["image", "2"],
+                ["text", "...Wait, is that it?"],
+                ["image", "1"],
+                ["text", "..."],
+                ["image", "2"],
+                ["text", "...Well, that is it!"],
+                ["image", "3"],
+                ["text", "One trillion free draws, all used up!"],
+                ["text", "That was faster than you expected."],
+                ["text", "At first, you thought that it would take longer than your lifetime to spend all those card draws one by one."],
+                ["image", "1"],
+                ["text", "...But well, what are you going to do now?"],
+                ["text", "Now that you no longer have any draws left, there's not that many things to do in the game anymore."],
+                ["text", "Everything in the game seems to be directly linked to you drawing cards, but since you can't do that anymore, everything just grinds to a halt."],
+                ["text", "You can't just buy more draws, you've just ran out of money trying to pay your apartment's rent and today's dinner!"],
+                ["text", "..."],
+                ["text", "Unless..."],
+                ["image", "4"],
+                ["text", "...you do that thing..."],
+            ]
+        },
+        3: {
+            name: "New Game+",
+            directives: [
+                ["image", "1"],
+                ["text", "Okay, you've got some money now, but at what cost?"],
+                ["text", "Losing all of your hard earned progress and going back to the beginning?"],
+                ["image", "2"],
+                ["text", "..."],
+                ["image", "3"],
+                ["text", "...Come to think about it a little bit more, it isn't that bad actually."],
+                ["text", "At least you can reclaim that one trillion free draws given by freshly created accounts."],
+                ["text", "With the little amount of money you now obtain, you can buy that starter pack to help you progress faster..."],
+                ["text", "...which means you can spend those trillion free draws faster, and sell this account for money sooner."],
+                ["text", "Just do this a few times and you can finally earn enough money for a living! Or become a trillionaire, even!"],
+                ["image", "4"],
+                ["text", "...The underground account trading market seems to be bigger than you originally think."],
+                ["text", "Well, maybe that's because selling gacha game accounts isn't that big of a deal for international gaming laws to intervene."],
+                ["text", "They actually attempted to ban game developers from preventing people to sell their gacha game accounts!"],
+                ["text", "Now that most of the “normal” jobs are replaced by robots, doing this is considered a niche way to earn money by some people."],
+                ["image", "5"],
+                ["text", "...Time to start now, shall we?"],
+            ]
+        },
     },
+
+    ads: {
+        minigames: {
+            sort: {
+                action_undo: "Undo",
+                action_restart: "Restart",
+            }
+        }
+    }
 }
