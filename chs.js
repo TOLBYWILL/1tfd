@@ -383,7 +383,7 @@ var cnItems = {
     "English": "英文",
     "Language": "语言",
     "Simplified Chinese": "简体中文(官方)",
-    "Click this big “Draw” button below to start drawing some of them!": "点击下面这个大的“抽取”按钮开始抽取其中的一些！",
+    "Click this big “Draw” button below to start drawing some of them!": "点击下面这个大的“抽卡”按钮开始抽取其中的一些！",
     "Experience": "经验",
     "free draws!": "免费抽取！",
     "Legacy": "遗产",
