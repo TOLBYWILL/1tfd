@@ -230,24 +230,47 @@ let i18nDefault = i18nStrings.en = {
         },
         options: {
             name: "Options",
-            headers: {
+            subtabs: {
                 prefs: "Preferences",
-                saves: "Save Management",
+                saves: "Storage",
                 other: "Other"
+            },
+            headers: {
+                prefs: {
+                    i18n: "Localization & Data Expression",
+                    logic: "Game Behavior",
+                    video: "Visual & User Interface",
+                    audio: "Audio"
+                },
+                saves: {
+                    storage: "Storage"
+                },
+                other: {
+                    info: "Info",
+                    bonus: "Bonus"
+                },
             },
             items: {
                 language: "Language",
+                updateRate: "Update Rate",
+                confirm: "Confirmations",
                 notation: "Number Format",
                 verb: "Verb",
                 cardImages: "Card Images",
-                music: "Background Music",
+                cardSize: "Card Size",
+                musicVolume: "BGM Volume",
                 localSave: "Local Save",
                 cloudSave: "Cloud Save",
                 info: "Info",
                 otherOther: "Other other",
             },
             values: {
+                updateRate: {
+                    auto: "Auto",
+                    perSec: "{0} TPS",
+                },
                 items: {
+                    showConfirms: "Show Confirmation Settings",
                     manualSave: "Manual Save",
                     importExport: "Import/Export Save",
                     hardReset: "Hard Reset",
@@ -287,6 +310,15 @@ let i18nDefault = i18nStrings.en = {
                 verb_desc: "Change the verb associated with {drawing} cards, in places such as the game title and item descriptions.",
                 john_note: "(Note: links open in this tab, ctrl+click to not accidentally close the game)",
             },
+            popups: {
+                confirm: {
+                    title: "Confirmation Settings",
+                    desc: "Ask me for confirmation:",
+                    types: {
+                        sellAccount: "When I sell my account",
+                    }
+                }
+            }
         },
     },
 
@@ -302,6 +334,7 @@ let i18nDefault = i18nStrings.en = {
 
             action_continue: "Continue",
             action_close: "Close",
+            action_reload: "Reload",
         },
         draw: {
             strings: {
@@ -1268,6 +1301,9 @@ let i18nDefault = i18nStrings.en = {
                 },
                 bulkMult: {
                     name: "Card multiplier",
+                },
+                energySpeed: {
+                    name: "Bonus energy speed",
                 },
                 cardRChance: {
                     name: "<rarity rarity='r'></rarity> appear chance",

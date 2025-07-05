@@ -4,13 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
     initCloud();
     loadGame();
     initUI();
+    updatePrefs();
     updateEffects();
     updateUnlocks();
     updateMusic();
     handleOfflineProgress();
     setTab("collection");
-    time = performance.now();
+    animTime = time = performance.now();
     requestAnimationFrame(loop);
+    requestAnimationFrame(animLoop);
     setTimeout(() => checkCloudSave(), 1000);
     
     $("#loading").remove();
@@ -28,5 +30,16 @@ function loop() {
     onFrame();
     updateNotifs();
 
-    requestAnimationFrame(loop);
+    if (game.option.updateRate) setTimeout(loop, 1000 / game.option.updateRate);
+    else requestAnimationFrame(loop);
+}
+
+let animTime = 0;
+let animDelta = 0;
+
+function animLoop() {
+    animDelta = performance.now() - animTime;
+    animTime += animDelta;
+    emit("anim-frame");
+    requestAnimationFrame(animLoop);
 }

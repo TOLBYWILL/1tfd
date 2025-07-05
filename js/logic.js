@@ -119,6 +119,21 @@ function onFrame() {
     if (game.time.now - lastCloudSaveTime >= 300000) saveToCloud();
 }
 
+let uiFrameTimeout = 0;
+function onUIFrame() {
+    if (game.option.updateRate > 0 && game.option.updateRate < 30 && !uiFrameTimeout) {
+        uiFrameTimeout = setTimeout(() => {
+            uiFrameTimeout = 0;
+            delta = performance.now() - time;
+            time += delta;
+            game.time.now = Date.now();
+
+            onFrame();
+            updateNotifs();
+        }, 0)
+    }
+}
+
 function handleOfflineProgress() {
     if (effects.offlineLimit <= 0) return;
     doOfflineGain((Date.now() - game.time.now) / 1000);
@@ -234,6 +249,10 @@ function updateUnlocks() {
     flags.unlocked.ad = hasCard("standard_legacy", "ex", "ads");
 }
 
+function updatePrefs() {
+    document.body.style.setProperty("--card-size", game.option.cardSize / 100);
+}
+
 // ----- Effect logic
 
 let effects = {...baseEffect};
@@ -326,6 +345,7 @@ function updateEffects(silent = false) {
 
 
     if (!silent) emit("effect-update");
+    onUIFrame();
 }
 
 // ----- Card logic

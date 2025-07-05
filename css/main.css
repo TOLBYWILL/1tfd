@@ -16,6 +16,8 @@
     --border-0: #fff3;
     --border-1: #fff7;
 
+    --color-highlighted: #86cfff;
+
     --button-color: #fff;
     --button-color-active: #fffc;
     --button-inv-color: #000;
@@ -155,6 +157,11 @@ button:disabled {
     color: var(--color-active);
     background: linear-gradient(var(--bg-0), var(--bg-0));
     cursor: default;
+}
+button:focus-visible {
+    outline: none;
+    z-index: 3;
+    box-shadow: inset var(--shadow-0), 0 0 0 2px var(--color-highlighted);
 }
 button.thick {
     padding: 10px 13px;
